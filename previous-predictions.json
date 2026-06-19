@@ -1,0 +1,6 @@
+[
+    {"date":"6/18","home_team":"CZE","home_win_pct":49,"home_xg":1.5,"away_team":"RSA","away_win_pct":22,"away_xg":0.9,"draw_pct":29,"predicted_score":"1-0"},
+    {"date":"6/18","home_team":"SUI","home_win_pct":61,"home_xg":2.1,"away_team":"BIH","away_win_pct":15,"away_xg":0.9,"draw_pct":23,"predicted_score":"1-0"},
+    {"date":"6/18","home_team":"CAN","home_field":true,"home_win_pct":78,"home_xg":2.5,"away_team":"QAT","away_win_pct":5,"away_xg":0.5,"draw_pct":17,"predicted_score":"1-0"},
+    {"date":"6/18","home_team":"MEX","home_field":true,"home_win_pct":61,"home_xg":1.7,"away_team":"KOR","away_win_pct":12,"away_xg":0.6,"draw_pct":27,"predicted_score":"1-0"}
+  ]

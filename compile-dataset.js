@@ -1,0 +1,197 @@
+const fs = require("fs");
+const teamMap = require("./team-map.js");
+const predictions = require("./model-predictions.json");
+const oddsData = require("./odds-6-19.json");
+
+// ============================================================
+// 1. Convert win probability (%) to implied American odds
+// ============================================================
+function pctToAmericanOdds(pct) {
+  const prob = pct / 100;
+  if (prob >= 1) return -Infinity;
+  if (prob <= 0) return Infinity;
+  if (prob === 0.5) return 100; // even money
+
+  if (prob > 0.5) {
+    // Favorite: negative odds
+    return Math.round(-(prob / (1 - prob)) * 100);
+  } else {
+    // Underdog: positive odds
+    return Math.round(((1 - prob) / prob) * 100);
+  }
+}
+
+// ============================================================
+// 2. Allowed bookmakers
+// ============================================================
+const ALLOWED_BOOKS = new Set(["fanduel", "betmgm", "bovada", "draftkings"]);
+
+// ============================================================
+// 3. Process odds.json — filter bookmakers & find best odds
+// ============================================================
+// Find best odds by team name (not by home/away position in odds.json)
+// Returns a map: { "TeamName": { odds, bookmaker }, "Draw": { odds, bookmaker } }
+function findBestOddsByName(game) {
+  const filteredBookmakers = game.bookmakers.filter((b) =>
+    ALLOWED_BOOKS.has(b.key)
+  );
+
+  const best = {}; // keyed by outcome name (team name or "Draw")
+
+  filteredBookmakers.forEach((bookmaker) => {
+    const h2h = bookmaker.markets.find((m) => m.key === "h2h");
+    if (!h2h) return;
+
+    h2h.outcomes.forEach((outcome) => {
+      if (!best[outcome.name] || outcome.price > best[outcome.name].odds) {
+        best[outcome.name] = {
+          odds: outcome.price,
+          bookmaker: bookmaker.key,
+        };
+      }
+    });
+  });
+
+  return best;
+}
+
+// Build a lookup for odds games by the two team names (sorted for consistent key)
+function makeOddsKey(teamA, teamB) {
+  return [teamA, teamB].sort().join(" vs ");
+}
+
+const oddsLookup = {};
+oddsData.forEach((game) => {
+  const key = makeOddsKey(game.home_team, game.away_team);
+  oddsLookup[key] = game;
+});
+
+// ============================================================
+// 4. Convert UTC commence_time to Eastern "game day" date
+//    Buffer: subtract 4 extra hours so games at midnight–3AM ET
+//    still count as the previous day's slate.
+// ============================================================
+function getGameDateET(commenceTimeUTC) {
+  const utcDate = new Date(commenceTimeUTC);
+  // Convert to ET (UTC-4 for EDT, UTC-5 for EST)
+  // Use Intl to get the actual offset dynamically
+  const etString = utcDate.toLocaleString("en-US", { timeZone: "America/New_York" });
+  const etDate = new Date(etString);
+  // Subtract 4-hour buffer so midnight–3:59AM ET games show as previous day
+  etDate.setHours(etDate.getHours() - 4);
+  const month = etDate.getMonth() + 1;
+  const day = etDate.getDate();
+  return `${month}/${day}`;
+}
+
+// ============================================================
+// 5. Compile the joint dataset
+// ============================================================
+const compiled = [];
+
+predictions.forEach((pred) => {
+  const homeFullName = teamMap[pred.home_team];
+  const awayFullName = teamMap[pred.away_team];
+
+  if (!homeFullName || !awayFullName) {
+    console.warn(
+      `WARNING: Could not map teams: ${pred.home_team} vs ${pred.away_team}`
+    );
+    return;
+  }
+
+  // Look up odds game by team names
+  const oddsKey = makeOddsKey(homeFullName, awayFullName);
+  const oddsGame = oddsLookup[oddsKey];
+
+  // Convert model percentages to implied American odds
+  const modelOdds = {
+    home: pctToAmericanOdds(pred.home_win_pct),
+    away: pctToAmericanOdds(pred.away_win_pct),
+    draw: pctToAmericanOdds(pred.draw_pct),
+  };
+
+  let bestMarketOdds = null;
+  if (oddsGame) {
+    // Get best odds keyed by actual team name (not home/away position)
+    const bestByName = findBestOddsByName(oddsGame);
+
+    // Map to our model's home/away using the full team names
+    const homeOdds = bestByName[homeFullName] || { odds: null, bookmaker: null };
+    const awayOdds = bestByName[awayFullName] || { odds: null, bookmaker: null };
+    const drawOdds = bestByName["Draw"] || { odds: null, bookmaker: null };
+
+    bestMarketOdds = {
+      home_odds: homeOdds.odds,
+      home_bookmaker: homeOdds.bookmaker,
+      away_odds: awayOdds.odds,
+      away_bookmaker: awayOdds.bookmaker,
+      draw_odds: drawOdds.odds,
+      draw_bookmaker: drawOdds.bookmaker,
+    };
+  }
+
+  // Derive date from odds commence_time (converted to ET with buffer),
+  // falling back to the model prediction date if no odds match
+  const gameDate = oddsGame
+    ? getGameDateET(oddsGame.commence_time)
+    : pred.date;
+
+  compiled.push({
+    date: gameDate,
+    home_team: pred.home_team,
+    away_team: pred.away_team,
+    home_field: pred.home_field || false,
+    predicted_score: pred.predicted_score,
+    home_xg: pred.home_xg,
+    away_xg: pred.away_xg,
+    model_implied_odds: {
+      home: modelOdds.home,
+      away: modelOdds.away,
+      draw: modelOdds.draw,
+    },
+    model_pct: {
+      home: pred.home_win_pct,
+      away: pred.away_win_pct,
+      draw: pred.draw_pct,
+    },
+    best_market_odds: bestMarketOdds,
+  });
+});
+
+// ============================================================
+// 6. Report & write output
+// ============================================================
+const matched = compiled.filter((g) => g.best_market_odds !== null).length;
+const unmatched = compiled.filter((g) => g.best_market_odds === null).length;
+
+console.log(`\nCompiled ${compiled.length} games`);
+console.log(`  Matched with odds data: ${matched}`);
+console.log(`  No odds data found:     ${unmatched}`);
+
+if (unmatched > 0) {
+  console.log("\nGames without odds data:");
+  compiled
+    .filter((g) => g.best_market_odds === null)
+    .forEach((g) =>
+      console.log(`  ${g.date}: ${g.home_team} vs ${g.away_team}`)
+    );
+}
+
+const outputPath = "./compiled-dataset.json";
+fs.writeFileSync(outputPath, JSON.stringify(compiled, null, 2));
+console.log(`\nOutput written to ${outputPath}`);
+
+// Also update index.html if it exists with a DATASET_PLACEHOLDER or previous data
+const htmlPath = "./index.html";
+if (fs.existsSync(htmlPath)) {
+  let html = fs.readFileSync(htmlPath, "utf8");
+  // Replace the DATA assignment line (matches both placeholder and previous data)
+  const dataRegex = /const DATA = .+?;\n/s;
+  const newData = `const DATA = ${JSON.stringify(compiled)};\n`;
+  if (dataRegex.test(html)) {
+    html = html.replace(dataRegex, newData);
+    fs.writeFileSync(htmlPath, html);
+    console.log("Updated index.html with latest data");
+  }
+}
