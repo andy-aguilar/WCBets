@@ -1,7 +1,7 @@
 const fs = require("fs");
 const teamMap = require("./team-map.js");
 const predictions = require("./model-predictions.json");
-const oddsData = require("./odds-6-19.json");
+const oddsData = require("./odds.json");
 
 // ============================================================
 // 1. Convert win probability (%) to implied American odds
@@ -178,9 +178,26 @@ if (unmatched > 0) {
     );
 }
 
+// Generate last-updated timestamp in Eastern time
+const lastUpdated = new Date().toLocaleString("en-US", {
+  timeZone: "America/New_York",
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+});
+
+const output = {
+  last_updated: lastUpdated,
+  games: compiled,
+};
+
 const outputPath = "./compiled-dataset.json";
-fs.writeFileSync(outputPath, JSON.stringify(compiled, null, 2));
-console.log(`\nOutput written to ${outputPath}`);
+fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));
+console.log(`\nCompiled at: ${lastUpdated} ET`);
+console.log(`Output written to ${outputPath}`);
 
 // Also update index.html if it exists with a DATASET_PLACEHOLDER or previous data
 const htmlPath = "./index.html";
@@ -191,7 +208,21 @@ if (fs.existsSync(htmlPath)) {
   const newData = `const DATA = ${JSON.stringify(compiled)};\n`;
   if (dataRegex.test(html)) {
     html = html.replace(dataRegex, newData);
-    fs.writeFileSync(htmlPath, html);
-    console.log("Updated index.html with latest data");
   }
+
+  // Replace or insert the LAST_UPDATED assignment line
+  const updatedRegex = /const LAST_UPDATED = .+?;\n/s;
+  const newUpdated = `const LAST_UPDATED = ${JSON.stringify(lastUpdated)};\n`;
+  if (updatedRegex.test(html)) {
+    html = html.replace(updatedRegex, newUpdated);
+  } else {
+    // Insert right after the DATA line
+    html = html.replace(
+      /const DATA = .+?;\n/s,
+      (match) => match + newUpdated
+    );
+  }
+
+  fs.writeFileSync(htmlPath, html);
+  console.log("Updated index.html with latest data");
 }
