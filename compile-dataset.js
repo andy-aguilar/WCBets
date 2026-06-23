@@ -22,37 +22,79 @@ function pctToAmericanOdds(pct) {
 }
 
 // ============================================================
-// 2. Allowed bookmakers
+// 2. Preferred bookmakers for tie-breaking (higher index = higher priority)
 // ============================================================
-const ALLOWED_BOOKS = new Set(["fanduel", "betmgm", "bovada", "draftkings"]);
+const PREFERRED_BOOKS = ["draftkings", "fanduel", "betmgm"];
+
+function getBookPriority(bookKey) {
+  const idx = PREFERRED_BOOKS.indexOf(bookKey);
+  return idx >= 0 ? idx : -1; // non-preferred books get -1
+}
 
 // ============================================================
-// 3. Process odds.json — filter bookmakers & find best odds
+// 3. Process odds.json — find best odds across ALL bookmakers
 // ============================================================
 // Find best odds by team name (not by home/away position in odds.json)
 // Returns a map: { "TeamName": { odds, bookmaker }, "Draw": { odds, bookmaker } }
+// Tie-breaking: when two books have the same price, prefer BetMGM > FanDuel > DraftKings
 function findBestOddsByName(game) {
-  const filteredBookmakers = game.bookmakers.filter((b) =>
-    ALLOWED_BOOKS.has(b.key)
-  );
-
   const best = {}; // keyed by outcome name (team name or "Draw")
 
-  filteredBookmakers.forEach((bookmaker) => {
+  game.bookmakers.forEach((bookmaker) => {
     const h2h = bookmaker.markets.find((m) => m.key === "h2h");
     if (!h2h) return;
 
     h2h.outcomes.forEach((outcome) => {
-      if (!best[outcome.name] || outcome.price > best[outcome.name].odds) {
+      const current = best[outcome.name];
+      if (!current) {
         best[outcome.name] = {
           odds: outcome.price,
           bookmaker: bookmaker.key,
         };
+      } else if (outcome.price > current.odds) {
+        best[outcome.name] = {
+          odds: outcome.price,
+          bookmaker: bookmaker.key,
+        };
+      } else if (outcome.price === current.odds) {
+        // Tie-break: prefer higher-priority book
+        if (getBookPriority(bookmaker.key) > getBookPriority(current.bookmaker)) {
+          best[outcome.name] = {
+            odds: outcome.price,
+            bookmaker: bookmaker.key,
+          };
+        }
       }
     });
   });
 
   return best;
+}
+
+// Collect ALL bookmaker odds for each outcome (for popover display)
+function getAllOddsByName(game) {
+  const all = {}; // keyed by outcome name → array of { bookmaker, odds }
+
+  game.bookmakers.forEach((bookmaker) => {
+    const h2h = bookmaker.markets.find((m) => m.key === "h2h");
+    if (!h2h) return;
+
+    h2h.outcomes.forEach((outcome) => {
+      if (!all[outcome.name]) all[outcome.name] = [];
+      all[outcome.name].push({
+        bookmaker: bookmaker.key,
+        title: bookmaker.title,
+        odds: outcome.price,
+      });
+    });
+  });
+
+  // Sort each outcome's array by odds descending (best first)
+  Object.keys(all).forEach((name) => {
+    all[name].sort((a, b) => b.odds - a.odds);
+  });
+
+  return all;
 }
 
 // Build a lookup for odds games by the two team names (sorted for consistent key)
@@ -112,9 +154,12 @@ predictions.forEach((pred) => {
   };
 
   let bestMarketOdds = null;
+  let allMarketOdds = null;
   if (oddsGame) {
     // Get best odds keyed by actual team name (not home/away position)
     const bestByName = findBestOddsByName(oddsGame);
+    // Get ALL odds keyed by team name (for popover display)
+    const allByName = getAllOddsByName(oddsGame);
 
     // Map to our model's home/away using the full team names
     const homeOdds = bestByName[homeFullName] || { odds: null, bookmaker: null };
@@ -128,6 +173,12 @@ predictions.forEach((pred) => {
       away_bookmaker: awayOdds.bookmaker,
       draw_odds: drawOdds.odds,
       draw_bookmaker: drawOdds.bookmaker,
+    };
+
+    allMarketOdds = {
+      home: allByName[homeFullName] || [],
+      away: allByName[awayFullName] || [],
+      draw: allByName["Draw"] || [],
     };
   }
 
@@ -156,6 +207,7 @@ predictions.forEach((pred) => {
       draw: pred.draw_pct,
     },
     best_market_odds: bestMarketOdds,
+    all_market_odds: allMarketOdds,
   });
 });
 

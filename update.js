@@ -39,11 +39,7 @@ function fetchURL(url) {
       https
         .get(u, (res) => {
           // Follow redirects
-          if (
-            res.statusCode >= 300 &&
-            res.statusCode < 400 &&
-            res.headers.location
-          ) {
+          if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
             get(res.headers.location);
             return;
           }
@@ -87,7 +83,7 @@ async function updateOdds() {
       console.log(`📦 Archived current odds → ${path.basename(archivePath)}`);
     } else {
       console.log(
-        `⚠️  Archive ${path.basename(archivePath)} already exists — overwriting odds.json only`,
+        `⚠️  Archive ${path.basename(archivePath)} already exists — overwriting odds.json only`
       );
     }
   }
@@ -163,8 +159,7 @@ function checkStaleness(predictions) {
   const [todayMonth, todayDay] = today.split("-").map(Number);
 
   // Find the earliest date in the predictions
-  let earliestMonth = 99,
-    earliestDay = 99;
+  let earliestMonth = 99, earliestDay = 99;
   predictions.forEach((p) => {
     const [m, d] = p.date.split("/").map(Number);
     if (m < earliestMonth || (m === earliestMonth && d < earliestDay)) {
@@ -230,9 +225,7 @@ async function updatePredictions(csvFilePath, forceUpdate) {
     console.log(`   Use --force to skip this check and update anyway.`);
     return false;
   } else if (staleWarning && forceUpdate) {
-    console.log(
-      `\n⚠️  Predictions may be stale — ${staleWarning} (--force used, continuing)`,
-    );
+    console.log(`\n⚠️  Predictions may be stale — ${staleWarning} (--force used, continuing)`);
   }
 
   // Backup current model-predictions.json → previous-predictions.json
@@ -242,7 +235,7 @@ async function updatePredictions(csvFilePath, forceUpdate) {
   if (fs.existsSync(modelPath)) {
     fs.copyFileSync(modelPath, prevPath);
     console.log(
-      "📦 Backed up current model-predictions.json → previous-predictions.json",
+      "📦 Backed up current model-predictions.json → previous-predictions.json"
     );
   }
 
