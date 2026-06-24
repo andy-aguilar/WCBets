@@ -1,7 +1,8 @@
 {
-  "last_updated": "Jun 24, 2026, 3:05 AM",
+  "last_updated": "Jun 24, 2026, 6:23 AM",
   "games": [
     {
+      "game_id": "6-24-BRA-SCO",
       "date": "6/24",
       "home_team": "BRA",
       "away_team": "SCO",
@@ -169,9 +170,11 @@
             "odds": 400
           }
         ]
-      }
+      },
+      "incentive_note": "Brazil have effectively clinched. Scotland mostly need to avoid a bad loss that wrecks tiebreakers."
     },
     {
+      "game_id": "6-24-MAR-HAI",
       "date": "6/24",
       "home_team": "MAR",
       "away_team": "HAI",
@@ -339,9 +342,11 @@
             "odds": 590
           }
         ]
-      }
+      },
+      "incentive_note": "Morocco can still chase first via goal differential. Haiti are eliminated."
     },
     {
+      "game_id": "6-24-CAN-SUI",
       "date": "6/24",
       "home_team": "CAN",
       "away_team": "SUI",
@@ -509,9 +514,11 @@
             "odds": 200
           }
         ]
-      }
+      },
+      "incentive_note": "Both teams are practically through. A draw guarantees advancement for both and gives Canada first."
     },
     {
+      "game_id": "6-24-BIH-QAT",
       "date": "6/24",
       "home_team": "BIH",
       "away_team": "QAT",
@@ -679,9 +686,11 @@
             "odds": 400
           }
         ]
-      }
+      },
+      "incentive_note": "Basically an elimination match. Winner likely advances; draw is probably useless."
     },
     {
+      "game_id": "6-24-MEX-CZE",
       "date": "6/24",
       "home_team": "MEX",
       "away_team": "CZE",
@@ -849,9 +858,11 @@
             "odds": 260
           }
         ]
-      }
+      },
+      "incentive_note": "Mexico already clinched first and have nothing at stake. Czechia likely need a win."
     },
     {
+      "game_id": "6-24-KOR-RSA",
       "date": "6/24",
       "home_team": "KOR",
       "away_team": "RSA",
@@ -1019,9 +1030,11 @@
             "odds": 275
           }
         ]
-      }
+      },
+      "incentive_note": "South Korea advance with a win or draw. South Africa are basically win-or-bust."
     },
     {
+      "game_id": "6-25-CIV-CUW",
       "date": "6/25",
       "home_team": "CIV",
       "away_team": "CUW",
@@ -1189,9 +1202,11 @@
             "odds": 670
           }
         ]
-      }
+      },
+      "incentive_note": "Cote d'Ivoire lock up second with a win. Curacao are win-or-bust despite awful goal differential."
     },
     {
+      "game_id": "6-25-GER-ECU",
       "date": "6/25",
       "home_team": "GER",
       "away_team": "ECU",
@@ -1359,9 +1374,11 @@
             "odds": 280
           }
         ]
-      }
+      },
+      "incentive_note": "Germany already clinched the group. Ecuador are basically in a win-or-go-home spot."
     },
     {
+      "game_id": "6-25-JPN-SWE",
       "date": "6/25",
       "home_team": "JPN",
       "away_team": "SWE",
@@ -1529,9 +1546,11 @@
             "odds": 240
           }
         ]
-      }
+      },
+      "incentive_note": "Japan still have reason to push for first on tiebreakers. Sweden advance with a win, likely with a draw, and could survive even with a loss."
     },
     {
+      "game_id": "6-25-NED-TUN",
       "date": "6/25",
       "home_team": "NED",
       "away_team": "TUN",
@@ -1699,9 +1718,11 @@
             "odds": 700
           }
         ]
-      }
+      },
+      "incentive_note": "Netherlands have effectively clinched but winning the group matters. Tunisia are eliminated."
     },
     {
+      "game_id": "6-25-USA-TUR",
       "date": "6/25",
       "home_team": "USA",
       "away_team": "TUR",
@@ -1869,9 +1890,11 @@
             "odds": 275
           }
         ]
-      }
+      },
+      "incentive_note": "USA already won the group. Match is mostly irrelevant and they may rotate to protect players on yellow cards."
     },
     {
+      "game_id": "6-25-PAR-AUS",
       "date": "6/25",
       "home_team": "PAR",
       "away_team": "AUS",
@@ -2039,9 +2062,11 @@
             "odds": 112
           }
         ]
-      }
+      },
+      "incentive_note": "Australia are in decent shape either way. Paraguay badly want the fourth point, so this could get drawish."
     },
     {
+      "game_id": "6-26-FRA-NOR",
       "date": "6/26",
       "home_team": "FRA",
       "away_team": "NOR",
@@ -2209,9 +2234,11 @@
             "odds": 310
           }
         ]
-      }
+      },
+      "incentive_note": "Both teams already advanced. This is only for first place; France keep it with a win or draw, Norway need a win."
     },
     {
+      "game_id": "6-26-SEN-IRQ",
       "date": "6/26",
       "home_team": "SEN",
       "away_team": "IRQ",
@@ -2379,9 +2406,11 @@
             "odds": 540
           }
         ]
-      }
+      },
+      "incentive_note": "Senegal need a win and probably want margin for goal differential. Iraq need a miracle even if they win."
     },
     {
+      "game_id": "6-26-EGY-IRN",
       "date": "6/26",
       "home_team": "EGY",
       "away_team": "IRN",
@@ -2549,9 +2578,11 @@
             "odds": 160
           }
         ]
-      }
+      },
+      "incentive_note": "Egypt are basically through and can likely win the group with a win or draw. Iran still need points and could even win the group with help."
     },
     {
+      "game_id": "6-26-BEL-NZL",
       "date": "6/26",
       "home_team": "BEL",
       "away_team": "NZL",
@@ -2719,9 +2750,11 @@
             "odds": 590
           }
         ]
-      }
+      },
+      "incentive_note": "Belgium likely advance with a win and maybe with a draw. New Zealand are basically win-or-go-home."
     },
     {
+      "game_id": "6-26-CPV-KSA",
       "date": "6/26",
       "home_team": "CPV",
       "away_team": "KSA",
@@ -2889,9 +2922,11 @@
             "odds": 235
           }
         ]
-      }
+      },
+      "incentive_note": "Cape Verde likely advance with a win or draw. Saudi Arabia are basically win-or-bust."
     },
     {
+      "game_id": "6-26-ESP-URU",
       "date": "6/26",
       "home_team": "ESP",
       "away_team": "URU",
@@ -3059,9 +3094,11 @@
             "odds": 305
           }
         ]
-      }
+      },
+      "incentive_note": "Spain are chasing first and a draw probably does it. Uruguay are in a weird spot where third may be better than second because Argentina awaits the runner-up."
     },
     {
+      "game_id": "6-27-ENG-PAN",
       "date": "6/27",
       "home_team": "ENG",
       "away_team": "PAN",
@@ -3214,9 +3251,11 @@
             "odds": 630
           }
         ]
-      }
+      },
+      "incentive_note": "England are nearly through but still want first and have incentive to run up the score. Panama are eliminated."
     },
     {
+      "game_id": "6-27-CRO-GHA",
       "date": "6/27",
       "home_team": "CRO",
       "away_team": "GHA",
@@ -3369,9 +3408,11 @@
             "odds": 210
           }
         ]
-      }
+      },
+      "incentive_note": "Both teams are likely alive either way, but first place is very valuable. Ghana are almost through; Croatia can win the group with help."
     },
     {
+      "game_id": "6-27-AUT-ALG",
       "date": "6/27",
       "home_team": "AUT",
       "away_team": "ALG",
@@ -3539,9 +3580,11 @@
             "odds": 119
           }
         ]
-      }
+      },
+      "incentive_note": "Austria and Algeria have a huge incentive to settle for a draw because four points probably gets both through."
     },
     {
+      "game_id": "6-27-ARG-JOR",
       "date": "6/27",
       "home_team": "ARG",
       "away_team": "JOR",
@@ -3709,9 +3752,11 @@
             "odds": 575
           }
         ]
-      }
+      },
+      "incentive_note": "Argentina already clinched the group and mostly have nothing to play for. Jordan are eliminated."
     },
     {
+      "game_id": "6-27-POR-COL",
       "date": "6/27",
       "home_team": "POR",
       "away_team": "COL",
@@ -3864,9 +3909,11 @@
             "odds": 230
           }
         ]
-      }
+      },
+      "incentive_note": "Colombia clinched advancement and win the group with a win or draw. Portugal are almost surely through but still have real incentive to win the group."
     },
     {
+      "game_id": "6-27-COD-UZB",
       "date": "6/27",
       "home_team": "COD",
       "away_team": "UZB",
@@ -4019,7 +4066,8 @@
             "odds": 250
           }
         ]
-      }
+      },
+      "incentive_note": "DR Congo should advance with a win. Uzbekistan need a lot of help and probably need a multi-goal win."
     }
   ]
 }

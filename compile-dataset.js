@@ -2,6 +2,7 @@ const fs = require("fs");
 const teamMap = require("./team-map.js");
 const predictions = require("./model-predictions.json");
 const oddsData = require("./odds.json");
+const incentivesData = require("./incentives.json");
 
 // ============================================================
 // 1. Convert win probability (%) to implied American odds
@@ -126,6 +127,10 @@ function getGameDateET(commenceTimeUTC) {
   return `${month}/${day}`;
 }
 
+function makeGameId(date, homeTeam, awayTeam) {
+  return `${date.replace("/", "-")}-${homeTeam}-${awayTeam}`;
+}
+
 // ============================================================
 // 5. Compile the joint dataset
 // ============================================================
@@ -187,8 +192,11 @@ predictions.forEach((pred) => {
   const gameDate = oddsGame
     ? getGameDateET(oddsGame.commence_time)
     : pred.date;
+  const gameId = makeGameId(gameDate, pred.home_team, pred.away_team);
+  const incentive = incentivesData[gameId] || null;
 
   compiled.push({
+    game_id: gameId,
     date: gameDate,
     home_team: pred.home_team,
     away_team: pred.away_team,
@@ -208,6 +216,7 @@ predictions.forEach((pred) => {
     },
     best_market_odds: bestMarketOdds,
     all_market_odds: allMarketOdds,
+    incentive_note: incentive ? incentive.note : null,
   });
 });
 
