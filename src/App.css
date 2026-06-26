@@ -257,6 +257,11 @@
   box-shadow: 0 20px 42px rgba(14, 22, 31, 0.16);
 }
 
+.popover-anchor {
+  position: relative;
+  display: inline-block;
+}
+
 .odds-trigger {
   padding: 0;
   border: 0;
