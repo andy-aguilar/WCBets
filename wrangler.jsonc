@@ -13,7 +13,10 @@
   ],
   "env": {
     "beta": {
-      "name": "atlas-bets-beta"
+      "name": "atlas-bets-beta",
+      "assets": {
+        "directory": "./frontend/dist"
+      }
     }
   }
 }
