@@ -4,6 +4,7 @@ const predictions = require("./model-predictions.json");
 const oddsData = require("./odds.json");
 const incentivesData = require("./incentives.json");
 const thirdPlaceLookup = require("./third-place-lookup.json");
+const ecuadorPathData = require("./ecuador-path-data.json");
 
 // ============================================================
 // 1. Convert win probability (%) to implied American odds
@@ -293,6 +294,19 @@ if (fs.existsSync(htmlPath)) {
     html = html.replace(
       /const LAST_UPDATED = .+?;\n/s,
       (match) => match + newThirdPlace
+    );
+  }
+
+  const ecuadorPathRegex = /const ECUADOR_PATH_DATA = .+?;\n/s;
+  const newEcuadorPath = `const ECUADOR_PATH_DATA = ${JSON.stringify(
+    ecuadorPathData
+  )};\n`;
+  if (ecuadorPathRegex.test(html)) {
+    html = html.replace(ecuadorPathRegex, newEcuadorPath);
+  } else {
+    html = html.replace(
+      /const THIRD_PLACE_LOOKUP = .+?;\n/s,
+      (match) => match + newEcuadorPath
     );
   }
 

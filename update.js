@@ -257,6 +257,11 @@ function compileDataset() {
       stdio: "inherit",
     });
 
+    execSync("node generate-ecuador-path-data.js", {
+      cwd: ROOT,
+      stdio: "inherit",
+    });
+
     execSync("node compile-dataset.js", {
       cwd: ROOT,
       stdio: "inherit",
