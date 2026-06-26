@@ -1,0 +1,17 @@
+date,fifa_code,prob_win,proj_gf,fifa_code_opp,prob_loss,proj_gf_opp,prob_draw,modal_score,penalty_et_results
+6/26,:fr: FRA,48,1.7,:no: NOR,25,1.2,27,1-0,
+6/26,:sn: SEN,73,2.5999999,:iq: IRQ,9,0.80000001,18,1-0,
+6/26,:eg: EGY,42,1.3,:ir: IRN,27,1,31,0-0,
+6/26,:be: BEL,76,2.5999999,:nz: NZL,6,0.60000002,17,1-0,
+6/26,:cv: CPV,36,1.1,:sa: KSA,30,1,34,0-0,
+6/26,:es: ESP,61,1.9,:uy: URU,14,0.80000001,25,1-0,
+6/27,:gb-eng: ENG,77,2.4000001,:pa: PAN,6,0.5,18,1-0,
+6/27,:hr: CRO,62,1.9,:gh: GHA,13,0.69999999,24,1-0,
+6/27,:at: AUT,42,1.6,:dz: ALG,31,1.3,27,1-1,
+6/27,:ar: ARG,88,3.2,:jo: JOR,2,0.30000001,11,2-0,
+6/27,:pt: POR,36,1.2,:co: COL,33,1.2,31,0-0,
+6/27,:cd: COD,44,1.4,:uz: UZB,27,1.1,29,0-0,
+6/28,:ca: CAN 🏠,67,1.8,:za: RSA,18,0.69999999,16,1-0,"ET: CAN 7%, RSA 3%; PK: CAN 9%, RSA 7%"
+6/29,:nl: NED,56,1.6,:ma: MAR,27,1,17,1-0,"ET: NED 7%, MAR 5%; PK: NED 9%, MAR 8%"
+6/29,:br: BRA,66,2,:jp: JPN,20,0.89999998,15,1-0,"ET: BRA 7%, JPN 3%; PK: BRA 8%, JPN 6%"
+7/1,:us: USA 🏠,79,2.5,:ba: BIH,10,0.69999999,11,1-0,"ET: USA 6%, BIH 2%; PK: USA 7%, BIH 4%"
