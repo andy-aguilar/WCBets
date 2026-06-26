@@ -83,6 +83,49 @@
   gap: 20px;
 }
 
+.controls-card {
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(24, 33, 43, 0.09);
+  box-shadow: 0 14px 32px rgba(19, 27, 37, 0.08);
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: end;
+}
+
+.control-field {
+  display: grid;
+  gap: 8px;
+}
+
+.control-field span,
+.toggle-field span {
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6d7a86;
+}
+
+.control-field input,
+.control-field select {
+  width: 100%;
+  border: 1px solid rgba(24, 33, 43, 0.12);
+  background: rgba(245, 248, 249, 0.95);
+  border-radius: 14px;
+  padding: 12px 14px;
+  color: #17212b;
+}
+
+.toggle-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+}
+
 .hero-stats {
   display: flex;
   gap: 12px;
@@ -156,6 +199,13 @@
   justify-content: space-between;
   gap: 16px;
   align-items: start;
+  position: relative;
+}
+
+.game-row__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .game-row__meta {
@@ -174,10 +224,50 @@
   white-space: nowrap;
 }
 
-.incentive-row td {
-  padding: 12px 14px 16px;
-  color: #65421f;
-  background: rgba(240, 193, 133, 0.18);
+.info-trigger {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(240, 193, 133, 0.24);
+  color: #6e451d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.info-icon {
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.inline-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 20;
+  width: min(320px, calc(100vw - 48px));
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #fffdf8;
+  border: 1px solid rgba(24, 33, 43, 0.12);
+  box-shadow: 0 20px 42px rgba(14, 22, 31, 0.16);
+}
+
+.popover-title {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.74rem;
+  color: #8b5e34;
+}
+
+.popover-body {
+  color: #465763;
+  line-height: 1.55;
 }
 
 .eyebrow {
@@ -232,6 +322,10 @@
   .site-header {
     grid-template-columns: 1fr;
     display: grid;
+  }
+
+  .controls-card {
+    grid-template-columns: 1fr;
   }
 
   .date-group__header,
