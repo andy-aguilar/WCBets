@@ -1,38 +1,32 @@
+import { useState } from "react";
 import { ecuadorPathData } from "../data/ecuadorPathData";
-import type {
-  EcuadorGroupMatch,
-  EcuadorRoundOf32Slot,
-  EcuadorStanding,
-} from "../lib/types";
+import {
+  ecuadorGroups,
+  getProjectedDefaultScore,
+  getRoundOf32Slots,
+  resolveEcuadorScenario,
+} from "../lib/ecuador";
 
-function sortStandings(standings: EcuadorStanding[]) {
-  return [...standings].sort((a, b) => {
-    if (b.points !== a.points) return b.points - a.points;
-    if (b.goal_difference !== a.goal_difference) {
-      return b.goal_difference - a.goal_difference;
-    }
-    if (b.goals_for !== a.goals_for) return b.goals_for - a.goals_for;
-    return a.team.localeCompare(b.team);
-  });
+type ScoreOverride = { home?: string; away?: string };
+
+const ROUND_OF_32_SLOTS = getRoundOf32Slots();
+
+function formatScoreline(home: string, away: string) {
+  if (home === "" || away === "") return "—";
+  return `${home}-${away}`;
 }
-
-function formatScore(match: EcuadorGroupMatch) {
-  if (!match.played || match.home_score == null || match.away_score == null) {
-    return match.raw;
-  }
-
-  return `${match.home_score}-${match.away_score}`;
-}
-
-const GROUP_E_STANDINGS = sortStandings(
-  ecuadorPathData.current_standings.E ?? [],
-);
-const GROUP_E_MATCHES = ecuadorPathData.groups.E?.matches ?? [];
-const ECUADOR_SLOTS = ["1E", "2E"]
-  .map((slot) => ecuadorPathData.round_of_32[slot])
-  .filter(Boolean) as EcuadorRoundOf32Slot[];
 
 export function EcuadorPathPage() {
+  const [scoreOverrides, setScoreOverrides] = useState<
+    Record<string, ScoreOverride>
+  >({});
+
+  const simulation = resolveEcuadorScenario(scoreOverrides);
+  const groupERank =
+    simulation.groupStates.E?.ordered.findIndex(
+      (team) => team.team === "Ecuador",
+    ) + 1 || 0;
+
   return (
     <main className="page-shell">
       <section className="page-hero">
@@ -40,27 +34,62 @@ export function EcuadorPathPage() {
           <p className="eyebrow">Ecuador path</p>
           <h1>Scenario desk</h1>
           <p className="tagline">
-            This is the first real shell for the Ecuador route: current Group E
-            table, match ledger, and Ecuador&apos;s fixed Round of 32 landing
-            spots. The full score-driven simulator is the next layer.
+            Enter projected scores for the remaining group-stage matches and
+            ATLAS will recompute the group tables, the third-place race, and
+            Ecuador&apos;s current Round of 32 outlook.
           </p>
         </div>
         <div className="hero-stats">
-          <div className="status-item">
-            <span className="status-label">Data source</span>
-            <strong>Wikipedia + lookup map</strong>
-          </div>
           <div className="status-item">
             <span className="status-label">Generated</span>
             <strong>{ecuadorPathData.generated_at}</strong>
           </div>
           <div className="status-item">
             <span className="status-label">Group E rank</span>
-            <strong>
-              {GROUP_E_STANDINGS.findIndex((team) => team.team === "Ecuador") +
-                1 || "—"}
-            </strong>
+            <strong>{groupERank || "—"}</strong>
           </div>
+          <div className="status-item">
+            <span className="status-label">Third-place combo</span>
+            <strong>{simulation.comboKey || "—"}</strong>
+          </div>
+        </div>
+      </section>
+
+      <section className="controls-card ecuador-controls">
+        <div className="ecuador-controls__copy">
+          <span className="status-label">Projection controls</span>
+          <p>
+            Defaults use rounded model xG where available. If a projected tie
+            still can&apos;t be separated, I&apos;ll flag it instead of faking
+            certainty.
+          </p>
+        </div>
+        <div className="ecuador-controls__actions">
+          <button
+            type="button"
+            className="action-button"
+            onClick={() => setScoreOverrides({})}
+          >
+            Clear overrides
+          </button>
+          <button
+            type="button"
+            className="action-button action-button--primary"
+            onClick={() => {
+              const nextOverrides: Record<string, ScoreOverride> = {};
+              ecuadorGroups.forEach((group) => {
+                group.matches.forEach((match) => {
+                  if (match.played) return;
+                  const suggested = getProjectedDefaultScore(match);
+                  if (suggested.home === "" || suggested.away === "") return;
+                  nextOverrides[match.id] = suggested;
+                });
+              });
+              setScoreOverrides(nextOverrides);
+            }}
+          >
+            Apply Model xG
+          </button>
         </div>
       </section>
 
@@ -68,60 +97,24 @@ export function EcuadorPathPage() {
         <article className="ecuador-card">
           <div className="ecuador-card__header">
             <div>
-              <p className="eyebrow">Current table</p>
-              <h2>Group E</h2>
+              <p className="eyebrow">Projected outcome</p>
+              <h2>{simulation.summary.headline}</h2>
             </div>
             <span className="ecuador-card__meta">
-              Sorted by points, GD, goals for
+              Live from your score inputs
             </span>
           </div>
-
-          <div className="table-scroll">
-            <table className="bets-table ecuador-table">
-              <thead>
-                <tr>
-                  <th>Team</th>
-                  <th>Pts</th>
-                  <th>GD</th>
-                  <th>GF</th>
-                  <th>GA</th>
-                  <th>P</th>
-                </tr>
-              </thead>
-              <tbody>
-                {GROUP_E_STANDINGS.map((team) => (
-                  <tr
-                    key={team.team}
-                    className={
-                      team.team === "Ecuador" ? "ecuador-table__focus" : ""
-                    }
-                  >
-                    <td>{team.team}</td>
-                    <td>{team.points}</td>
-                    <td>{team.goal_difference}</td>
-                    <td>{team.goals_for}</td>
-                    <td>{team.goals_against}</td>
-                    <td>{team.played}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </article>
-
-        <article className="ecuador-card">
-          <div className="ecuador-card__header">
-            <div>
-              <p className="eyebrow">Landing spots</p>
-              <h2>Round of 32</h2>
-            </div>
-            <span className="ecuador-card__meta">
-              Fixed slots if Ecuador advances directly
-            </span>
+          <p className="ecuador-summary-text">{simulation.summary.detail}</p>
+          <div className="sim-pill-row">
+            {simulation.summary.pills.map((pill) => (
+              <span className={`sim-pill ${pill.tone}`} key={pill.label}>
+                {pill.label}
+              </span>
+            ))}
           </div>
 
           <div className="slot-list">
-            {ECUADOR_SLOTS.map((slot) => (
+            {ROUND_OF_32_SLOTS.map((slot) => (
               <div className="slot-card" key={slot.slot}>
                 <div className="slot-card__top">
                   <strong>{slot.slot}</strong>
@@ -138,34 +131,241 @@ export function EcuadorPathPage() {
             ))}
           </div>
         </article>
+
+        <article className="ecuador-card">
+          <div className="ecuador-card__header">
+            <div>
+              <p className="eyebrow">Third-place race</p>
+              <h2>Top 12 snapshot</h2>
+            </div>
+            <span className="ecuador-card__meta">
+              Groups ranked by points, GD, goals for
+            </span>
+          </div>
+
+          <div className="table-scroll">
+            <table className="bets-table ecuador-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Team</th>
+                  <th>Grp</th>
+                  <th>Pts</th>
+                  <th>GD</th>
+                  <th>GF</th>
+                </tr>
+              </thead>
+              <tbody>
+                {simulation.thirdRanking.map((row) => (
+                  <tr
+                    key={`${row.group}-${row.team}`}
+                    className={
+                      row.team === "Ecuador"
+                        ? "ecuador-table__focus"
+                        : row.unresolvedCutoff
+                          ? "ecuador-table__warn"
+                          : ""
+                    }
+                  >
+                    <td>{row.third_rank}</td>
+                    <td>
+                      {row.team}
+                      {row.resolution === "manual-needed" ? (
+                        <span className="inline-status">tie</span>
+                      ) : null}
+                    </td>
+                    <td>{row.group}</td>
+                    <td>{row.points}</td>
+                    <td>{row.goal_difference}</td>
+                    <td>{row.goals_for}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </article>
       </section>
 
       <section className="ecuador-card">
         <div className="ecuador-card__header">
           <div>
-            <p className="eyebrow">Match ledger</p>
-            <h2>Group E results</h2>
+            <p className="eyebrow">Projected scores</p>
+            <h2>Remaining group matches</h2>
           </div>
           <span className="ecuador-card__meta">
-            Raw group-state feed we&apos;ll use for the simulator
+            Groups G through L still affect Ecuador&apos;s 3rd-place path
           </span>
         </div>
 
-        <div className="match-list">
-          {GROUP_E_MATCHES.map((match) => (
-            <article className="match-card" key={match.id}>
-              <div className="match-card__top">
-                <strong>{match.heading}</strong>
-                <span>{formatScore(match)}</span>
+        <div className="sim-groups-grid">
+          {ecuadorGroups.map((group) => (
+            <article className="sim-group-card" key={group.group}>
+              <div className="sim-group-card__header">
+                <div>
+                  <strong>Group {group.group}</strong>
+                  <span>
+                    {group.matches.filter((match) => !match.played).length}{" "}
+                    matches left
+                  </span>
+                </div>
               </div>
-              <p>
-                {match.date_text} · {match.time_text}
-              </p>
-              <span>
-                {match.venue}, {match.city}
-              </span>
+              <div className="sim-match-list">
+                {group.matches
+                  .filter((match) => !match.played)
+                  .map((match) => {
+                    const defaults = getProjectedDefaultScore(match);
+                    const state = scoreOverrides[match.id] || {};
+                    const homeValue = state.home ?? defaults.home;
+                    const awayValue = state.away ?? defaults.away;
+
+                    return (
+                      <div className="sim-match-card" key={match.id}>
+                        <div className="sim-match-card__meta">
+                          {match.date_text} · {match.city}
+                        </div>
+                        <div className="sim-score-grid">
+                          <span>{match.home_team}</span>
+                          <input
+                            type="number"
+                            min="0"
+                            max="20"
+                            step="1"
+                            inputMode="numeric"
+                            value={homeValue}
+                            onChange={(event) => {
+                              const nextValue = event.target.value;
+                              setScoreOverrides((current) => ({
+                                ...current,
+                                [match.id]: {
+                                  ...(current[match.id] || {}),
+                                  home: nextValue,
+                                  away:
+                                    current[match.id]?.away ?? defaults.away,
+                                },
+                              }));
+                            }}
+                          />
+                        </div>
+                        <div className="sim-score-grid">
+                          <span>{match.away_team}</span>
+                          <input
+                            type="number"
+                            min="0"
+                            max="20"
+                            step="1"
+                            inputMode="numeric"
+                            value={awayValue}
+                            onChange={(event) => {
+                              const nextValue = event.target.value;
+                              setScoreOverrides((current) => ({
+                                ...current,
+                                [match.id]: {
+                                  ...(current[match.id] || {}),
+                                  home:
+                                    current[match.id]?.home ?? defaults.home,
+                                  away: nextValue,
+                                },
+                              }));
+                            }}
+                          />
+                        </div>
+                        <div className="sim-match-card__footer">
+                          <span>
+                            Model default{" "}
+                            {formatScoreline(defaults.home, defaults.away)}
+                          </span>
+                          <button
+                            type="button"
+                            className="mini-button"
+                            onClick={() =>
+                              setScoreOverrides((current) => {
+                                const next = { ...current };
+                                delete next[match.id];
+                                return next;
+                              })
+                            }
+                          >
+                            Reset
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="ecuador-card">
+        <div className="ecuador-card__header">
+          <div>
+            <p className="eyebrow">Recomputed standings</p>
+            <h2>Affected groups</h2>
+          </div>
+          <span className="ecuador-card__meta">
+            Group ties flagged when the current data can&apos;t fully separate
+            them
+          </span>
+        </div>
+
+        <div className="sim-groups-grid">
+          {ecuadorGroups.map((group) => {
+            const state = simulation.groupStates[group.group];
+
+            return (
+              <article className="sim-group-card" key={`table-${group.group}`}>
+                <div className="sim-group-card__header">
+                  <div>
+                    <strong>Group {group.group}</strong>
+                    <span>
+                      {state.unresolved.length
+                        ? `Tie alert: ${state.unresolved.join(" · ")}`
+                        : "Resolved"}
+                    </span>
+                  </div>
+                </div>
+                <div className="table-scroll">
+                  <table className="bets-table ecuador-table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>Pts</th>
+                        <th>GD</th>
+                        <th>GF</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {state.ordered.map((row) => (
+                        <tr
+                          key={`${state.group}-${row.team}`}
+                          className={
+                            row.team === "Ecuador"
+                              ? "ecuador-table__focus"
+                              : row.resolution === "manual-needed"
+                                ? "ecuador-table__warn"
+                                : ""
+                          }
+                        >
+                          <td>{row.rank}</td>
+                          <td>
+                            {row.team}
+                            {row.resolution === "manual-needed" ? (
+                              <span className="inline-status">tie</span>
+                            ) : null}
+                          </td>
+                          <td>{row.points}</td>
+                          <td>{row.goal_difference}</td>
+                          <td>{row.goals_for}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
     </main>

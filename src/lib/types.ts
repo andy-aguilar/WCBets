@@ -120,3 +120,27 @@ export interface EcuadorPathDataset {
   current_standings: Record<string, EcuadorStanding[]>;
   round_of_32: Record<string, EcuadorRoundOf32Slot>;
 }
+
+export interface ThirdPlaceLookupCombo {
+  option: number;
+  key: string;
+  groups: string[];
+  still_possible: boolean;
+  slots: Record<string, string>;
+}
+
+export interface ThirdPlaceLookup {
+  generated_at: string;
+  source: string;
+  slot_order: string[];
+  groups: string[];
+  combos: ThirdPlaceLookupCombo[];
+  combos_by_key: Record<
+    string,
+    {
+      option: number;
+      still_possible: boolean;
+      slots: Record<string, string>;
+    }
+  >;
+}
