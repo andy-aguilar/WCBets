@@ -1,23 +1,19 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "atlas-bets",
-  "pages_build_output_dir": "./dist",
   "compatibility_date": "2026-06-26",
   "observability": {
     "enabled": true
   },
   "assets": {
-    "directory": "."
+    "directory": "./dist"
   },
   "compatibility_flags": [
     "nodejs_compat"
   ],
   "env": {
     "beta": {
-      "name": "atlas-bets-beta",
-      "assets": {
-        "directory": "./dist"
-      }
+      "name": "atlas-bets-beta"
     }
   }
 }
