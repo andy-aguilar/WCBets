@@ -310,6 +310,17 @@ if (fs.existsSync(htmlPath)) {
     );
   }
 
+  const teamMapRegex = /const TEAM_MAP = .+?;\n/s;
+  const newTeamMap = `const TEAM_MAP = ${JSON.stringify(teamMap)};\n`;
+  if (teamMapRegex.test(html)) {
+    html = html.replace(teamMapRegex, newTeamMap);
+  } else {
+    html = html.replace(
+      /const ECUADOR_PATH_DATA = .+?;\n/s,
+      (match) => match + newTeamMap
+    );
+  }
+
   fs.writeFileSync(htmlPath, html);
   console.log("Updated index.html with latest data");
 }
