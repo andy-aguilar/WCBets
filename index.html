@@ -332,6 +332,39 @@
       opacity: 0.35;
     }
 
+    tr.combined-row td {
+      background: rgba(59, 130, 246, 0.08);
+      border-top: 1px dashed rgba(59, 130, 246, 0.28);
+      white-space: normal;
+    }
+
+    .combined-summary {
+      display: flex;
+      gap: 14px;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+
+    .combined-title {
+      color: #a9c9ff;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .combined-risk {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .combined-note {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      line-height: 1.45;
+    }
+
     .outcome-label {
       font-weight: 600;
     }
@@ -1242,6 +1275,7 @@ function render() {
         </tr>
       `;
 
+      const edgeOutcomes = [];
       outcomes.forEach(o => {
         const modelPct = game.model_pct[o.key];
         const modelOdds = game.model_implied_odds[o.key];
@@ -1253,6 +1287,14 @@ function render() {
         const hasEdge = k > 0;
         const betAmount = k * fraction * bankroll;
         const payout = betAmount * decimal; // total payout (bet + profit)
+
+        if (hasEdge) {
+          edgeOutcomes.push({
+            label: o.label,
+            kelly: k,
+            betAmount,
+          });
+        }
 
         if (valueOnly && !hasEdge) return;
 
@@ -1276,6 +1318,33 @@ function render() {
           </tr>
         `;
       });
+
+      if (edgeOutcomes.length >= 2) {
+        const totalKelly = edgeOutcomes.reduce((sum, outcome) => sum + outcome.kelly, 0);
+        const totalRisk = edgeOutcomes.reduce((sum, outcome) => sum + outcome.betAmount, 0);
+        const splitText = edgeOutcomes
+          .map((outcome) => {
+            const share = totalKelly > 0 ? (outcome.kelly / totalKelly) * 100 : 0;
+            const dollarPart = bankroll > 0 ? ` $${outcome.betAmount.toFixed(2)}` : '';
+            return `${outcome.label}${dollarPart} (${share.toFixed(0)}%)`;
+          })
+          .join(' · ');
+        const riskText = bankroll > 0
+          ? `$${totalRisk.toFixed(2)} total`
+          : `${(totalKelly * fraction * 100).toFixed(2)}% of bankroll`;
+
+        html += `
+          <tr class="combined-row">
+            <td colspan="10">
+              <div class="combined-summary">
+                <span class="combined-title">Combined</span>
+                <span class="combined-risk">Risk ${riskText}</span>
+              </div>
+              <div class="combined-note">Split the game stake proportionally across the live edges: ${splitText}.</div>
+            </td>
+          </tr>
+        `;
+      }
     });
 
     html += `
