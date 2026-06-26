@@ -252,6 +252,11 @@ async function updatePredictions(csvFilePath, forceUpdate) {
 function compileDataset() {
   console.log("\n🔨 Compiling dataset...\n");
   try {
+    execSync("node generate-third-place-lookup.js", {
+      cwd: ROOT,
+      stdio: "inherit",
+    });
+
     execSync("node compile-dataset.js", {
       cwd: ROOT,
       stdio: "inherit",

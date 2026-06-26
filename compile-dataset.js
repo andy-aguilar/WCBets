@@ -3,6 +3,7 @@ const teamMap = require("./team-map.js");
 const predictions = require("./model-predictions.json");
 const oddsData = require("./odds.json");
 const incentivesData = require("./incentives.json");
+const thirdPlaceLookup = require("./third-place-lookup.json");
 
 // ============================================================
 // 1. Convert win probability (%) to implied American odds
@@ -281,6 +282,17 @@ if (fs.existsSync(htmlPath)) {
     html = html.replace(
       /const DATA = .+?;\n/s,
       (match) => match + newUpdated
+    );
+  }
+
+  const thirdPlaceRegex = /const THIRD_PLACE_LOOKUP = .+?;\n/s;
+  const newThirdPlace = `const THIRD_PLACE_LOOKUP = ${JSON.stringify(thirdPlaceLookup)};\n`;
+  if (thirdPlaceRegex.test(html)) {
+    html = html.replace(thirdPlaceRegex, newThirdPlace);
+  } else {
+    html = html.replace(
+      /const LAST_UPDATED = .+?;\n/s,
+      (match) => match + newThirdPlace
     );
   }
 
