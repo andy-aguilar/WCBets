@@ -433,6 +433,29 @@
   line-height: 1.6;
 }
 
+.tie-alerts-grid {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.tie-alert-card {
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgba(255, 234, 204, 0.55);
+  border: 1px solid rgba(139, 94, 52, 0.2);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.tie-alert-card p,
+.tie-alert-card span {
+  margin: 6px 0 0;
+  color: #6d5a45;
+}
+
 .ecuador-table__focus td {
   background: rgba(240, 193, 133, 0.14);
   color: #17212b;
@@ -590,6 +613,51 @@
   border-radius: 12px;
 }
 
+.tie-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 18, 24, 0.42);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.tie-modal {
+  width: min(640px, 100%);
+  max-height: min(80vh, 760px);
+  overflow: auto;
+  padding: 24px;
+  border-radius: 24px;
+  background: #fffdf8;
+  border: 1px solid rgba(24, 33, 43, 0.12);
+  box-shadow: 0 24px 60px rgba(14, 22, 31, 0.22);
+  display: grid;
+  gap: 18px;
+}
+
+.tie-modal__header,
+.tie-modal__actions,
+.tie-order-row,
+.tie-order-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.tie-order-list {
+  display: grid;
+  gap: 10px;
+}
+
+.tie-order-row {
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(245, 248, 249, 0.95);
+  border: 1px solid rgba(24, 33, 43, 0.08);
+}
+
 @media (max-width: 720px) {
   .app-shell {
     padding: 16px;
@@ -612,11 +680,15 @@
 
   .ecuador-grid,
   .sim-groups-grid,
+  .tie-alert-card,
   .date-group__header,
   .ecuador-card__header,
   .slot-card__top,
   .match-card__top,
   .sim-match-card__footer,
+  .tie-modal__header,
+  .tie-modal__actions,
+  .tie-order-row,
   .game-row__inner {
     display: grid;
     grid-template-columns: 1fr;

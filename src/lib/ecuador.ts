@@ -9,22 +9,25 @@ import type {
 } from "./types";
 
 type ScoreOverride = { home?: string; away?: string };
+type TieOverrideMap = Record<string, string[]>;
 
 export interface GroupResolvedRow extends EcuadorStanding {
   rank: number;
-  resolution: "auto" | "manual-needed";
+  resolution: "auto" | "manual" | "manual-needed";
+  tieKey?: string;
 }
 
 export interface ResolvedGroupState {
   group: string;
   matches: EcuadorGroupMatch[];
   ordered: GroupResolvedRow[];
-  unresolved: string[];
+  unresolved: TieContext[];
 }
 
 export interface ThirdPlaceRow extends GroupResolvedRow {
   third_rank: number;
   unresolvedCutoff?: boolean;
+  rankingResolution: "auto" | "manual" | "manual-needed";
 }
 
 export interface EcuadorSummary {
@@ -38,6 +41,17 @@ export interface EcuadorScenario {
   thirdRanking: ThirdPlaceRow[];
   comboKey: string;
   summary: EcuadorSummary;
+  unresolvedGroupTies: TieContext[];
+  unresolvedThirdTies: TieContext[];
+}
+
+export interface TieContext {
+  key: string;
+  type: "group" | "third";
+  group?: string;
+  title: string;
+  description: string;
+  teams: string[];
 }
 
 function makePill(
@@ -283,16 +297,76 @@ function compareThirdRows(a: EcuadorStanding, b: EcuadorStanding) {
   );
 }
 
+function makeGroupTieKey(
+  groupLetter: string,
+  rows: Array<
+    EcuadorStanding & {
+      hh_points: number;
+      hh_goal_difference: number;
+      hh_goals_for: number;
+    }
+  >,
+) {
+  const fingerprint = rows
+    .map((row) =>
+      [
+        row.team,
+        row.points,
+        row.hh_points,
+        row.hh_goal_difference,
+        row.hh_goals_for,
+        row.goal_difference,
+        row.goals_for,
+      ].join(":"),
+    )
+    .sort()
+    .join("|");
+
+  return `group:${groupLetter}:${fingerprint}`;
+}
+
+function makeThirdTieKey(rows: EcuadorStanding[]) {
+  const fingerprint = rows
+    .map((row) =>
+      [
+        row.group,
+        row.team,
+        row.points,
+        row.goal_difference,
+        row.goals_for,
+      ].join(":"),
+    )
+    .sort()
+    .join("|");
+
+  return `third:${fingerprint}`;
+}
+
+function applyManualOrder<T extends { team: string }>(
+  rows: T[],
+  key: string,
+  tieOverrides: TieOverrideMap,
+) {
+  const order = tieOverrides[key];
+  if (!order) return null;
+  const orderIndex = Object.fromEntries(
+    order.map((team, index) => [team, index]),
+  );
+  if (rows.some((row) => !(row.team in orderIndex))) return null;
+  return [...rows].sort((a, b) => orderIndex[a.team] - orderIndex[b.team]);
+}
+
 function resolveGroupTie(
   groupLetter: string,
   tiedTeams: string[],
   matches: EcuadorGroupMatch[],
   overallMap: Record<string, EcuadorStanding>,
+  tieOverrides: TieOverrideMap,
 ) {
   if (tiedTeams.length === 1) {
     return {
       ordered: [{ ...overallMap[tiedTeams[0]], resolution: "auto" as const }],
-      unresolved: [] as string[],
+      unresolved: [] as TieContext[],
     };
   }
 
@@ -314,9 +388,12 @@ function resolveGroupTie(
   }));
   const sorted = [...rows].sort(compareGroupTieRows);
   const ordered: Array<
-    (typeof rows)[number] & { resolution: "auto" | "manual-needed" }
+    (typeof rows)[number] & {
+      resolution: "auto" | "manual" | "manual-needed";
+      tieKey?: string;
+    }
   > = [];
-  const unresolved: string[] = [];
+  const unresolved: TieContext[] = [];
 
   for (let index = 0; index < sorted.length; ) {
     let end = index + 1;
@@ -335,10 +412,26 @@ function resolveGroupTie(
     if (subset.length === 1) {
       ordered.push({ ...subset[0], resolution: "auto" });
     } else {
-      subset.forEach((row) =>
-        ordered.push({ ...row, resolution: "manual-needed" }),
-      );
-      unresolved.push(...subset.map((row) => row.team));
+      const key = makeGroupTieKey(groupLetter, subset);
+      const manual = applyManualOrder(subset, key, tieOverrides);
+      if (manual) {
+        manual.forEach((row) =>
+          ordered.push({ ...row, resolution: "manual", tieKey: key }),
+        );
+      } else {
+        subset.forEach((row) =>
+          ordered.push({ ...row, resolution: "manual-needed", tieKey: key }),
+        );
+        unresolved.push({
+          key,
+          type: "group",
+          group: groupLetter,
+          title: `Set Group ${groupLetter} order`,
+          description:
+            "These teams are still tied after points, head-to-head, goal difference, and goals scored.",
+          teams: subset.map((row) => row.team),
+        });
+      }
     }
     index = end;
   }
@@ -349,6 +442,7 @@ function resolveGroupTie(
 export function resolveGroupState(
   group: EcuadorGroupData,
   scoreState: Record<string, ScoreOverride>,
+  tieOverrides: TieOverrideMap,
 ): ResolvedGroupState {
   const matches = group.matches.map((match) =>
     cloneProjectedMatch(match, scoreState),
@@ -361,7 +455,7 @@ export function resolveGroupState(
   });
 
   const ordered: GroupResolvedRow[] = [];
-  const unresolved: string[] = [];
+  const unresolved: TieContext[] = [];
 
   Object.keys(byPoints)
     .map(Number)
@@ -372,6 +466,7 @@ export function resolveGroupState(
         byPoints[points],
         matches,
         overallMap,
+        tieOverrides,
       );
       resolved.ordered.forEach((row, index) => {
         ordered.push({
@@ -386,6 +481,7 @@ export function resolveGroupState(
           goal_difference: row.goal_difference,
           points: row.points,
           resolution: row.resolution,
+          tieKey: "tieKey" in row ? row.tieKey : undefined,
           rank: ordered.length + index + 1,
         });
       });
@@ -395,12 +491,16 @@ export function resolveGroupState(
   return { group: group.group, matches, ordered, unresolved };
 }
 
-function rankThirdPlaceTeams(groupStates: Record<string, ResolvedGroupState>) {
+function rankThirdPlaceTeams(
+  groupStates: Record<string, ResolvedGroupState>,
+  tieOverrides: TieOverrideMap,
+) {
   const rows = Object.values(groupStates)
     .map((groupState) => groupState.ordered[2])
     .filter(Boolean);
   const sorted = [...rows].sort(compareThirdRows);
   const ordered: ThirdPlaceRow[] = [];
+  const unresolved: TieContext[] = [];
 
   for (let index = 0; index < sorted.length; ) {
     let end = index + 1;
@@ -415,17 +515,52 @@ function rankThirdPlaceTeams(groupStates: Record<string, ResolvedGroupState>) {
 
     const subset = sorted.slice(index, end);
     const spansCutoff = index < 8 && end > 8;
-    subset.forEach((row) =>
-      ordered.push({
-        ...row,
-        third_rank: ordered.length + 1,
-        unresolvedCutoff: spansCutoff,
-      }),
-    );
+    if (subset.length === 1 || !spansCutoff) {
+      subset.forEach((row) =>
+        ordered.push({
+          ...row,
+          third_rank: ordered.length + 1,
+          unresolvedCutoff: false,
+          rankingResolution: "auto",
+        }),
+      );
+    } else {
+      const key = makeThirdTieKey(subset);
+      const manual = applyManualOrder(subset, key, tieOverrides);
+      if (manual) {
+        manual.forEach((row) =>
+          ordered.push({
+            ...row,
+            third_rank: ordered.length + 1,
+            unresolvedCutoff: false,
+            rankingResolution: "manual",
+            tieKey: key,
+          }),
+        );
+      } else {
+        subset.forEach((row) =>
+          ordered.push({
+            ...row,
+            third_rank: ordered.length + 1,
+            unresolvedCutoff: true,
+            rankingResolution: "manual-needed",
+            tieKey: key,
+          }),
+        );
+        unresolved.push({
+          key,
+          type: "third",
+          title: "Set third-place cutoff order",
+          description:
+            "This exact tie crosses the 8th-place cutoff for advancing third-place teams.",
+          teams: subset.map((row) => row.team),
+        });
+      }
+    }
     index = end;
   }
 
-  return ordered;
+  return { ordered, unresolved };
 }
 
 function getGroupPositionTeam(
@@ -441,13 +576,12 @@ function getGroupPositionTeam(
 function buildSummary(
   groupStates: Record<string, ResolvedGroupState>,
   thirdRanking: ThirdPlaceRow[],
+  unresolvedThirdTies: TieContext[],
   comboKey: string,
 ) {
   const combo = thirdPlaceLookup.combos_by_key[comboKey] || null;
   const ecuador = groupStates.E?.ordered.find((row) => row.team === "Ecuador");
-  const unresolvedThirdCutoff = thirdRanking.some(
-    (row) => row.unresolvedCutoff,
-  );
+  const unresolvedThirdCutoff = unresolvedThirdTies.length > 0;
 
   const summary: EcuadorSummary = {
     headline: "Need more scores",
@@ -566,15 +700,21 @@ function buildSummary(
 
 export function resolveEcuadorScenario(
   scoreState: Record<string, ScoreOverride>,
+  tieOverrides: TieOverrideMap,
 ): EcuadorScenario {
   const groupStates = Object.fromEntries(
     Object.values(ecuadorPathData.groups).map((group) => [
       group.group,
-      resolveGroupState(group, scoreState),
+      resolveGroupState(group, scoreState, tieOverrides),
     ]),
   ) as Record<string, ResolvedGroupState>;
 
-  const thirdRanking = rankThirdPlaceTeams(groupStates);
+  const unresolvedGroupTies = Object.values(groupStates).flatMap(
+    (state) => state.unresolved,
+  );
+  const thirdResults = rankThirdPlaceTeams(groupStates, tieOverrides);
+  const thirdRanking = thirdResults.ordered;
+  const unresolvedThirdTies = thirdResults.unresolved;
   const comboKey = thirdRanking
     .slice(0, 8)
     .map((row) => row.group)
@@ -585,7 +725,14 @@ export function resolveEcuadorScenario(
     groupStates,
     thirdRanking,
     comboKey,
-    summary: buildSummary(groupStates, thirdRanking, comboKey),
+    summary: buildSummary(
+      groupStates,
+      thirdRanking,
+      unresolvedThirdTies,
+      comboKey,
+    ),
+    unresolvedGroupTies,
+    unresolvedThirdTies,
   };
 }
 

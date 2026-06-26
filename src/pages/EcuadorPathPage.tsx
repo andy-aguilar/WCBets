@@ -6,8 +6,10 @@ import {
   getRoundOf32Slots,
   resolveEcuadorScenario,
 } from "../lib/ecuador";
+import type { TieContext } from "../lib/ecuador";
 
 type ScoreOverride = { home?: string; away?: string };
+type TieOverrideMap = Record<string, string[]>;
 
 const ROUND_OF_32_SLOTS = getRoundOf32Slots();
 
@@ -20,8 +22,12 @@ export function EcuadorPathPage() {
   const [scoreOverrides, setScoreOverrides] = useState<
     Record<string, ScoreOverride>
   >({});
+  const [tieOverrides, setTieOverrides] = useState<TieOverrideMap>({});
+  const [activeTie, setActiveTie] = useState<
+    (TieContext & { draft: string[] }) | null
+  >(null);
 
-  const simulation = resolveEcuadorScenario(scoreOverrides);
+  const simulation = resolveEcuadorScenario(scoreOverrides, tieOverrides);
   const groupERank =
     simulation.groupStates.E?.ordered.findIndex(
       (team) => team.team === "Ecuador",
@@ -68,9 +74,13 @@ export function EcuadorPathPage() {
           <button
             type="button"
             className="action-button"
-            onClick={() => setScoreOverrides({})}
+            onClick={() => {
+              setScoreOverrides({});
+              setTieOverrides({});
+              setActiveTie(null);
+            }}
           >
-            Clear overrides
+            Clear all
           </button>
           <button
             type="button"
@@ -92,6 +102,38 @@ export function EcuadorPathPage() {
           </button>
         </div>
       </section>
+
+      {simulation.unresolvedGroupTies.length ||
+      simulation.unresolvedThirdTies.length ? (
+        <section className="tie-alerts-grid">
+          {[
+            ...simulation.unresolvedGroupTies,
+            ...simulation.unresolvedThirdTies,
+          ].map((context) => (
+            <article className="tie-alert-card" key={context.key}>
+              <div>
+                <strong>{context.title}</strong>
+                <p>{context.description}</p>
+                <span>{context.teams.join(" · ")}</span>
+              </div>
+              <button
+                type="button"
+                className="mini-button"
+                onClick={() =>
+                  setActiveTie({
+                    ...context,
+                    draft: tieOverrides[context.key]
+                      ? [...tieOverrides[context.key]]
+                      : [...context.teams],
+                  })
+                }
+              >
+                Set order
+              </button>
+            </article>
+          ))}
+        </section>
+      ) : null}
 
       <section className="ecuador-grid">
         <article className="ecuador-card">
@@ -170,8 +212,10 @@ export function EcuadorPathPage() {
                     <td>{row.third_rank}</td>
                     <td>
                       {row.team}
-                      {row.resolution === "manual-needed" ? (
+                      {row.rankingResolution === "manual-needed" ? (
                         <span className="inline-status">tie</span>
+                      ) : row.rankingResolution === "manual" ? (
+                        <span className="inline-status">manual</span>
                       ) : null}
                     </td>
                     <td>{row.group}</td>
@@ -320,7 +364,9 @@ export function EcuadorPathPage() {
                     <strong>Group {group.group}</strong>
                     <span>
                       {state.unresolved.length
-                        ? `Tie alert: ${state.unresolved.join(" · ")}`
+                        ? `Tie alert: ${state.unresolved
+                            .flatMap((context) => context.teams)
+                            .join(" · ")}`
                         : "Resolved"}
                     </span>
                   </div>
@@ -353,6 +399,8 @@ export function EcuadorPathPage() {
                             {row.team}
                             {row.resolution === "manual-needed" ? (
                               <span className="inline-status">tie</span>
+                            ) : row.resolution === "manual" ? (
+                              <span className="inline-status">manual</span>
                             ) : null}
                           </td>
                           <td>{row.points}</td>
@@ -368,6 +416,114 @@ export function EcuadorPathPage() {
           })}
         </div>
       </section>
+
+      {activeTie ? (
+        <div
+          className="tie-modal-backdrop"
+          onClick={() => setActiveTie(null)}
+          role="presentation"
+        >
+          <div
+            className="tie-modal"
+            onClick={(event) => event.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-label={activeTie.title}
+          >
+            <div className="tie-modal__header">
+              <div>
+                <p className="eyebrow">Manual tiebreak</p>
+                <h2>{activeTie.title}</h2>
+              </div>
+              <button
+                type="button"
+                className="mini-button"
+                onClick={() => setActiveTie(null)}
+              >
+                Close
+              </button>
+            </div>
+            <p className="ecuador-summary-text">{activeTie.description}</p>
+            <div className="tie-order-list">
+              {activeTie.draft.map((team, index) => (
+                <div className="tie-order-row" key={`${activeTie.key}-${team}`}>
+                  <strong>{index + 1}</strong>
+                  <div>{team}</div>
+                  <div className="tie-order-actions">
+                    <button
+                      type="button"
+                      className="mini-button"
+                      disabled={index === 0}
+                      onClick={() =>
+                        setActiveTie((current) => {
+                          if (!current || index === 0) return current;
+                          const next = [...current.draft];
+                          [next[index - 1], next[index]] = [
+                            next[index],
+                            next[index - 1],
+                          ];
+                          return { ...current, draft: next };
+                        })
+                      }
+                    >
+                      Up
+                    </button>
+                    <button
+                      type="button"
+                      className="mini-button"
+                      disabled={index === activeTie.draft.length - 1}
+                      onClick={() =>
+                        setActiveTie((current) => {
+                          if (!current || index === current.draft.length - 1) {
+                            return current;
+                          }
+                          const next = [...current.draft];
+                          [next[index], next[index + 1]] = [
+                            next[index + 1],
+                            next[index],
+                          ];
+                          return { ...current, draft: next };
+                        })
+                      }
+                    >
+                      Down
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="tie-modal__actions">
+              <button
+                type="button"
+                className="action-button"
+                onClick={() => {
+                  setTieOverrides((current) => {
+                    const next = { ...current };
+                    delete next[activeTie.key];
+                    return next;
+                  });
+                  setActiveTie(null);
+                }}
+              >
+                Clear override
+              </button>
+              <button
+                type="button"
+                className="action-button action-button--primary"
+                onClick={() => {
+                  setTieOverrides((current) => ({
+                    ...current,
+                    [activeTie.key]: [...activeTie.draft],
+                  }));
+                  setActiveTie(null);
+                }}
+              >
+                Save order
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </main>
   );
 }
