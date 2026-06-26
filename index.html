@@ -1241,10 +1241,16 @@ TEAM_NAME_TO_CODE[normalizeTeamName("United States")] = "USA";
 TEAM_NAME_TO_CODE[normalizeTeamName("Cote d'Ivoire")] = "CIV";
 TEAM_NAME_TO_CODE[normalizeTeamName("Côte d'Ivoire")] = "CIV";
 const MODEL_MATCH_LOOKUP = Object.fromEntries(
-  (DATA || []).map((game) => [
-    `${game.home_team}::${game.away_team}`,
-    game,
-  ])
+  (DATA || []).flatMap((game) => ([
+    [
+      `${game.home_team}::${game.away_team}`,
+      { home_xg: game.home_xg, away_xg: game.away_xg },
+    ],
+    [
+      `${game.away_team}::${game.home_team}`,
+      { home_xg: game.away_xg, away_xg: game.home_xg },
+    ],
+  ]))
 );
 
 function normalizeTeamName(value) {
