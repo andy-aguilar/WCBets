@@ -10,23 +10,23 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -160
+                "price": -185
               },
               {
                 "name": "Norway",
-                "price": 360
+                "price": 420
               },
               {
                 "name": "Draw",
-                "price": 360
+                "price": 380
               }
             ]
           }
@@ -35,23 +35,23 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -152
+                "price": -177
               },
               {
                 "name": "Norway",
-                "price": 365
+                "price": 425
               },
               {
                 "name": "Draw",
-                "price": 372
+                "price": 398
               }
             ]
           }
@@ -60,19 +60,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -162
+                "price": -175
               },
               {
                 "name": "Norway",
-                "price": 360
+                "price": 400
               },
               {
                 "name": "Draw",
@@ -85,19 +85,19 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -155
+                "price": -170
               },
               {
                 "name": "Norway",
-                "price": 360
+                "price": 400
               },
               {
                 "name": "Draw",
@@ -110,23 +110,23 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -161
+                "price": -167
               },
               {
                 "name": "Norway",
-                "price": 360
+                "price": 370
               },
               {
                 "name": "Draw",
-                "price": 340
+                "price": 350
               }
             ]
           }
@@ -135,23 +135,23 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -160
+                "price": -183
               },
               {
                 "name": "Norway",
-                "price": 355
+                "price": 405
               },
               {
                 "name": "Draw",
-                "price": 360
+                "price": 380
               }
             ]
           }
@@ -160,23 +160,23 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -152
+                "price": -177
               },
               {
                 "name": "Norway",
-                "price": 365
+                "price": 425
               },
               {
                 "name": "Draw",
-                "price": 372
+                "price": 398
               }
             ]
           }
@@ -185,23 +185,23 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -155
+                "price": -175
               },
               {
                 "name": "Norway",
-                "price": 333
+                "price": 380
               },
               {
                 "name": "Draw",
-                "price": 340
+                "price": 350
               }
             ]
           }
@@ -210,23 +210,23 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "France",
-                "price": -160
+                "price": -175
               },
               {
                 "name": "Norway",
-                "price": 365
+                "price": 410
               },
               {
                 "name": "Draw",
-                "price": 365
+                "price": 385
               }
             ]
           }
@@ -245,23 +245,23 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Iraq",
-                "price": 1100
+                "price": 1200
               },
               {
                 "name": "Senegal",
-                "price": -475
+                "price": -500
               },
               {
                 "name": "Draw",
-                "price": 550
+                "price": 600
               }
             ]
           }
@@ -270,11 +270,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Iraq",
@@ -295,23 +295,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Iraq",
-                "price": 1100
+                "price": 1300
               },
               {
                 "name": "Senegal",
-                "price": -455
+                "price": -530
               },
               {
                 "name": "Draw",
-                "price": 575
+                "price": 650
               }
             ]
           }
@@ -320,15 +320,15 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Iraq",
-                "price": 1200
+                "price": 1100
               },
               {
                 "name": "Senegal",
@@ -345,23 +345,23 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "Iraq",
-                "price": 1075
+                "price": 1150
               },
               {
                 "name": "Senegal",
-                "price": -461
+                "price": -481
               },
               {
                 "name": "Draw",
-                "price": 550
+                "price": 560
               }
             ]
           }
@@ -370,11 +370,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Iraq",
@@ -395,11 +395,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Iraq",
@@ -420,19 +420,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Iraq",
-                "price": 1000
+                "price": 1050
               },
               {
                 "name": "Senegal",
-                "price": -450
+                "price": -475
               },
               {
                 "name": "Draw",
@@ -445,19 +445,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Iraq",
-                "price": 1000
+                "price": 1050
               },
               {
                 "name": "Senegal",
-                "price": -402
+                "price": -400
               },
               {
                 "name": "Draw",
@@ -480,90 +480,15 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Cape Verde",
                 "price": 165
-              },
-              {
-                "name": "Saudi Arabia",
-                "price": 170
-              },
-              {
-                "name": "Draw",
-                "price": 220
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betonlineag",
-        "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
-            "outcomes": [
-              {
-                "name": "Cape Verde",
-                "price": 168
-              },
-              {
-                "name": "Saudi Arabia",
-                "price": 179
-              },
-              {
-                "name": "Draw",
-                "price": 235
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "betrivers",
-        "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
-            "outcomes": [
-              {
-                "name": "Cape Verde",
-                "price": 170
-              },
-              {
-                "name": "Saudi Arabia",
-                "price": 185
-              },
-              {
-                "name": "Draw",
-                "price": 205
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "key": "draftkings",
-        "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
-        "markets": [
-          {
-            "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
-            "outcomes": [
-              {
-                "name": "Cape Verde",
-                "price": 170
               },
               {
                 "name": "Saudi Arabia",
@@ -578,13 +503,88 @@
         ]
       },
       {
-        "key": "mybookieag",
-        "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:13:36Z",
+            "outcomes": [
+              {
+                "name": "Cape Verde",
+                "price": 179
+              },
+              {
+                "name": "Saudi Arabia",
+                "price": 168
+              },
+              {
+                "name": "Draw",
+                "price": 235
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betrivers",
+        "title": "BetRivers",
+        "last_update": "2026-06-26T16:13:26Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:13:26Z",
+            "outcomes": [
+              {
+                "name": "Cape Verde",
+                "price": 160
+              },
+              {
+                "name": "Saudi Arabia",
+                "price": 175
+              },
+              {
+                "name": "Draw",
+                "price": 235
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "last_update": "2026-06-26T16:12:51Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:12:51Z",
+            "outcomes": [
+              {
+                "name": "Cape Verde",
+                "price": 170
+              },
+              {
+                "name": "Saudi Arabia",
+                "price": 170
+              },
+              {
+                "name": "Draw",
+                "price": 235
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "mybookieag",
+        "title": "MyBookie.ag",
+        "last_update": "2026-06-26T16:12:29Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:12:29Z",
             "outcomes": [
               {
                 "name": "Cape Verde",
@@ -605,19 +605,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Cape Verde",
-                "price": 167
+                "price": 166
               },
               {
                 "name": "Saudi Arabia",
-                "price": 167
+                "price": 168
               },
               {
                 "name": "Draw",
@@ -630,19 +630,19 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Cape Verde",
-                "price": 168
+                "price": 179
               },
               {
                 "name": "Saudi Arabia",
-                "price": 179
+                "price": 168
               },
               {
                 "name": "Draw",
@@ -655,15 +655,15 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Cape Verde",
-                "price": 155
+                "price": 160
               },
               {
                 "name": "Saudi Arabia",
@@ -671,7 +671,7 @@
               },
               {
                 "name": "Draw",
-                "price": 225
+                "price": 220
               }
             ]
           }
@@ -680,11 +680,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Cape Verde",
@@ -696,7 +696,7 @@
               },
               {
                 "name": "Draw",
-                "price": 230
+                "price": 235
               }
             ]
           }
@@ -715,23 +715,23 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -170
+                "price": -150
               },
               {
                 "name": "Uruguay",
-                "price": 550
+                "price": 500
               },
               {
                 "name": "Draw",
-                "price": 270
+                "price": 250
               }
             ]
           }
@@ -740,23 +740,23 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -160
+                "price": -145
               },
               {
                 "name": "Uruguay",
-                "price": 575
+                "price": 543
               },
               {
                 "name": "Draw",
-                "price": 275
+                "price": 255
               }
             ]
           }
@@ -765,23 +765,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -175
+                "price": -150
               },
               {
                 "name": "Uruguay",
-                "price": 550
+                "price": 500
               },
               {
                 "name": "Draw",
-                "price": 275
+                "price": 250
               }
             ]
           }
@@ -790,23 +790,23 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -160
+                "price": -145
               },
               {
                 "name": "Uruguay",
-                "price": 500
+                "price": 475
               },
               {
                 "name": "Draw",
-                "price": 280
+                "price": 260
               }
             ]
           }
@@ -815,23 +815,23 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -167
+                "price": -149
               },
               {
                 "name": "Uruguay",
-                "price": 480
+                "price": 450
               },
               {
                 "name": "Draw",
-                "price": 280
+                "price": 255
               }
             ]
           }
@@ -840,23 +840,23 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -164
+                "price": -146
               },
               {
                 "name": "Uruguay",
-                "price": 525
+                "price": 475
               },
               {
                 "name": "Draw",
-                "price": 270
+                "price": 245
               }
             ]
           }
@@ -865,23 +865,23 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -160
+                "price": -145
               },
               {
                 "name": "Uruguay",
-                "price": 575
+                "price": 543
               },
               {
                 "name": "Draw",
-                "price": 275
+                "price": 255
               }
             ]
           }
@@ -890,15 +890,15 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -160
+                "price": -145
               },
               {
                 "name": "Uruguay",
@@ -906,7 +906,7 @@
               },
               {
                 "name": "Draw",
-                "price": 275
+                "price": 260
               }
             ]
           }
@@ -915,23 +915,23 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Spain",
-                "price": -190
+                "price": -145
               },
               {
                 "name": "Uruguay",
-                "price": 680
+                "price": 510
               },
               {
                 "name": "Draw",
-                "price": 285
+                "price": 250
               }
             ]
           }
@@ -950,15 +950,15 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Belgium",
-                "price": -600
+                "price": -550
               },
               {
                 "name": "New Zealand",
@@ -966,7 +966,7 @@
               },
               {
                 "name": "Draw",
-                "price": 650
+                "price": 600
               }
             ]
           }
@@ -975,23 +975,23 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Belgium",
-                "price": -530
+                "price": -515
               },
               {
                 "name": "New Zealand",
-                "price": 1400
+                "price": 1375
               },
               {
                 "name": "Draw",
-                "price": 718
+                "price": 700
               }
             ]
           }
@@ -1000,19 +1000,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Belgium",
-                "price": -590
+                "price": -670
               },
               {
                 "name": "New Zealand",
-                "price": 1500
+                "price": 1600
               },
               {
                 "name": "Draw",
@@ -1025,11 +1025,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Belgium",
@@ -1050,11 +1050,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "Belgium",
@@ -1062,7 +1062,7 @@
               },
               {
                 "name": "New Zealand",
-                "price": 1225
+                "price": 1200
               },
               {
                 "name": "Draw",
@@ -1075,11 +1075,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Belgium",
@@ -1087,7 +1087,7 @@
               },
               {
                 "name": "New Zealand",
-                "price": 1300
+                "price": 1200
               },
               {
                 "name": "Draw",
@@ -1100,23 +1100,23 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Belgium",
-                "price": -530
+                "price": -515
               },
               {
                 "name": "New Zealand",
-                "price": 1400
+                "price": 1375
               },
               {
                 "name": "Draw",
-                "price": 718
+                "price": 700
               }
             ]
           }
@@ -1125,11 +1125,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Belgium",
@@ -1150,23 +1150,23 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Belgium",
-                "price": -630
+                "price": -550
               },
               {
                 "name": "New Zealand",
-                "price": 1650
+                "price": 1500
               },
               {
                 "name": "Draw",
-                "price": 720
+                "price": 685
               }
             ]
           }
@@ -1185,11 +1185,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Egypt",
@@ -1210,11 +1210,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Egypt",
@@ -1222,11 +1222,11 @@
               },
               {
                 "name": "Iran",
-                "price": 298
+                "price": 294
               },
               {
                 "name": "Draw",
-                "price": 166
+                "price": 168
               }
             ]
           }
@@ -1235,11 +1235,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Egypt",
@@ -1247,7 +1247,7 @@
               },
               {
                 "name": "Iran",
-                "price": 285
+                "price": 290
               },
               {
                 "name": "Draw",
@@ -1260,11 +1260,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Egypt",
@@ -1272,7 +1272,7 @@
               },
               {
                 "name": "Iran",
-                "price": 280
+                "price": 290
               },
               {
                 "name": "Draw",
@@ -1285,11 +1285,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:29Z",
             "outcomes": [
               {
                 "name": "Egypt",
@@ -1310,19 +1310,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Egypt",
-                "price": 145
+                "price": 146
               },
               {
                 "name": "Iran",
-                "price": 290
+                "price": 285
               },
               {
                 "name": "Draw",
@@ -1335,11 +1335,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Egypt",
@@ -1347,11 +1347,11 @@
               },
               {
                 "name": "Iran",
-                "price": 298
+                "price": 294
               },
               {
                 "name": "Draw",
-                "price": 166
+                "price": 168
               }
             ]
           }
@@ -1360,11 +1360,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Egypt",
@@ -1385,19 +1385,19 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Egypt",
-                "price": 146
+                "price": 145
               },
               {
                 "name": "Iran",
-                "price": 287
+                "price": 300
               },
               {
                 "name": "Draw",
@@ -1420,15 +1420,15 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Croatia",
-                "price": -130
+                "price": -135
               },
               {
                 "name": "Ghana",
@@ -1445,11 +1445,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Croatia",
@@ -1470,23 +1470,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Croatia",
-                "price": -127
+                "price": -134
               },
               {
                 "name": "Ghana",
-                "price": 480
+                "price": 500
               },
               {
                 "name": "Draw",
-                "price": 215
+                "price": 220
               }
             ]
           }
@@ -1495,11 +1495,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Croatia",
@@ -1520,11 +1520,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "Croatia",
@@ -1545,15 +1545,15 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Croatia",
-                "price": -135
+                "price": -131
               },
               {
                 "name": "Ghana",
@@ -1561,7 +1561,7 @@
               },
               {
                 "name": "Draw",
-                "price": 220
+                "price": 215
               }
             ]
           }
@@ -1570,11 +1570,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Croatia",
@@ -1595,19 +1595,19 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Croatia",
-                "price": -130
+                "price": -135
               },
               {
                 "name": "Ghana",
-                "price": 400
+                "price": 425
               },
               {
                 "name": "Draw",
@@ -1620,23 +1620,23 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Croatia",
-                "price": -131
+                "price": -135
               },
               {
                 "name": "Ghana",
-                "price": 487
+                "price": 500
               },
               {
                 "name": "Draw",
-                "price": 226
+                "price": 235
               }
             ]
           }
@@ -1655,11 +1655,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "England",
@@ -1680,15 +1680,15 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "England",
-                "price": -575
+                "price": -590
               },
               {
                 "name": "Panama",
@@ -1696,7 +1696,7 @@
               },
               {
                 "name": "Draw",
-                "price": 705
+                "price": 765
               }
             ]
           }
@@ -1705,11 +1705,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "England",
@@ -1717,7 +1717,7 @@
               },
               {
                 "name": "Panama",
-                "price": 1800
+                "price": 1700
               },
               {
                 "name": "Draw",
@@ -1730,23 +1730,23 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "England",
-                "price": -575
+                "price": -600
               },
               {
                 "name": "Panama",
-                "price": 1400
+                "price": 1500
               },
               {
                 "name": "Draw",
-                "price": 700
+                "price": 750
               }
             ]
           }
@@ -1755,23 +1755,23 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "England",
-                "price": -599
+                "price": -625
               },
               {
                 "name": "Panama",
-                "price": 1350
+                "price": 1400
               },
               {
                 "name": "Draw",
-                "price": 650
+                "price": 660
               }
             ]
           }
@@ -1780,23 +1780,23 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "England",
-                "price": -650
+                "price": -675
               },
               {
                 "name": "Panama",
-                "price": 1400
+                "price": 1500
               },
               {
                 "name": "Draw",
-                "price": 700
+                "price": 725
               }
             ]
           }
@@ -1805,15 +1805,15 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "England",
-                "price": -575
+                "price": -590
               },
               {
                 "name": "Panama",
@@ -1821,7 +1821,7 @@
               },
               {
                 "name": "Draw",
-                "price": 705
+                "price": 765
               }
             ]
           }
@@ -1830,11 +1830,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "England",
@@ -1855,11 +1855,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "England",
@@ -1890,23 +1890,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Colombia",
-                "price": 320
+                "price": 300
               },
               {
                 "name": "Portugal",
-                "price": -113
+                "price": -110
               },
               {
                 "name": "Draw",
-                "price": 255
+                "price": 265
               }
             ]
           }
@@ -1915,11 +1915,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Colombia",
@@ -1927,7 +1927,7 @@
               },
               {
                 "name": "Portugal",
-                "price": -120
+                "price": -115
               },
               {
                 "name": "Draw",
@@ -1940,11 +1940,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Colombia",
@@ -1965,11 +1965,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Colombia",
@@ -1990,11 +1990,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "Colombia",
@@ -2015,19 +2015,19 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Colombia",
-                "price": 305
+                "price": 300
               },
               {
                 "name": "Portugal",
-                "price": -117
+                "price": -116
               },
               {
                 "name": "Draw",
@@ -2040,11 +2040,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Colombia",
@@ -2065,11 +2065,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Colombia",
@@ -2090,23 +2090,23 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Colombia",
-                "price": 325
+                "price": 310
               },
               {
                 "name": "Portugal",
-                "price": -120
+                "price": -115
               },
               {
                 "name": "Draw",
-                "price": 285
+                "price": 280
               }
             ]
           }
@@ -2125,11 +2125,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "DR Congo",
@@ -2141,7 +2141,7 @@
               },
               {
                 "name": "Draw",
-                "price": 300
+                "price": 290
               }
             ]
           }
@@ -2150,11 +2150,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "DR Congo",
@@ -2175,23 +2175,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "DR Congo",
-                "price": -137
+                "price": -130
               },
               {
                 "name": "Uzbekistan",
-                "price": 330
+                "price": 350
               },
               {
                 "name": "Draw",
-                "price": 310
+                "price": 285
               }
             ]
           }
@@ -2200,11 +2200,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "DR Congo",
@@ -2225,23 +2225,23 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "DR Congo",
-                "price": -134
+                "price": -128
               },
               {
                 "name": "Uzbekistan",
-                "price": 330
+                "price": 320
               },
               {
                 "name": "Draw",
-                "price": 290
+                "price": 285
               }
             ]
           }
@@ -2250,11 +2250,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "DR Congo",
@@ -2275,11 +2275,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "DR Congo",
@@ -2300,11 +2300,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "DR Congo",
@@ -2325,23 +2325,23 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "DR Congo",
-                "price": -135
+                "price": -130
               },
               {
                 "name": "Uzbekistan",
-                "price": 335
+                "price": 330
               },
               {
                 "name": "Draw",
-                "price": 325
+                "price": 310
               }
             ]
           }
@@ -2360,11 +2360,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Algeria",
@@ -2385,11 +2385,11 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:56Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Algeria",
@@ -2410,11 +2410,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Algeria",
@@ -2435,15 +2435,15 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Algeria",
-                "price": 310
+                "price": 300
               },
               {
                 "name": "Austria",
@@ -2460,11 +2460,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:28Z",
             "outcomes": [
               {
                 "name": "Algeria",
@@ -2485,23 +2485,23 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Algeria",
-                "price": 315
+                "price": 295
               },
               {
                 "name": "Austria",
-                "price": 190
+                "price": 188
               },
               {
                 "name": "Draw",
-                "price": 114
+                "price": 120
               }
             ]
           }
@@ -2510,11 +2510,11 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Algeria",
@@ -2535,11 +2535,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Algeria",
@@ -2560,11 +2560,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Algeria",
@@ -2595,15 +2595,15 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Argentina",
-                "price": -700
+                "price": -650
               },
               {
                 "name": "Jordan",
@@ -2620,15 +2620,15 @@
       {
         "key": "betonlineag",
         "title": "BetOnline.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:36Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:36Z",
             "outcomes": [
               {
                 "name": "Argentina",
-                "price": -520
+                "price": -570
               },
               {
                 "name": "Jordan",
@@ -2636,7 +2636,7 @@
               },
               {
                 "name": "Draw",
-                "price": 674
+                "price": 755
               }
             ]
           }
@@ -2645,23 +2645,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Argentina",
-                "price": -560
+                "price": -625
               },
               {
                 "name": "Jordan",
-                "price": 1500
+                "price": 1600
               },
               {
                 "name": "Draw",
-                "price": 650
+                "price": 700
               }
             ]
           }
@@ -2670,11 +2670,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Argentina",
@@ -2695,11 +2695,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:29Z",
             "outcomes": [
               {
                 "name": "Argentina",
@@ -2720,11 +2720,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Argentina",
@@ -2736,7 +2736,7 @@
               },
               {
                 "name": "Draw",
-                "price": 650
+                "price": 675
               }
             ]
           }
@@ -2745,15 +2745,15 @@
       {
         "key": "lowvig",
         "title": "LowVig.ag",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Argentina",
-                "price": -520
+                "price": -570
               },
               {
                 "name": "Jordan",
@@ -2761,7 +2761,7 @@
               },
               {
                 "name": "Draw",
-                "price": 674
+                "price": 755
               }
             ]
           }
@@ -2770,11 +2770,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Argentina",
@@ -2795,23 +2795,23 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Argentina",
-                "price": -545
+                "price": -565
               },
               {
                 "name": "Jordan",
-                "price": 1345
+                "price": 1350
               },
               {
                 "name": "Draw",
-                "price": 655
+                "price": 685
               }
             ]
           }
@@ -2830,23 +2830,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Canada",
-                "price": -141
+                "price": -143
               },
               {
                 "name": "South Africa",
-                "price": 450
+                "price": 440
               },
               {
                 "name": "Draw",
-                "price": 250
+                "price": 260
               }
             ]
           }
@@ -2855,11 +2855,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:29Z",
             "outcomes": [
               {
                 "name": "Canada",
@@ -2880,11 +2880,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Canada",
@@ -2905,11 +2905,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Canada",
@@ -2930,11 +2930,11 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Canada",
@@ -2955,19 +2955,19 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Canada",
-                "price": -145
+                "price": -140
               },
               {
                 "name": "South Africa",
-                "price": 460
+                "price": 440
               },
               {
                 "name": "Draw",
@@ -2980,11 +2980,11 @@
       {
         "key": "betus",
         "title": "BetUS",
-        "last_update": "2026-06-26T10:35:12Z",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:12Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Canada",
@@ -2997,6 +2997,31 @@
               {
                 "name": "Draw",
                 "price": 266
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2026-06-26T16:13:36Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:13:36Z",
+            "outcomes": [
+              {
+                "name": "Canada",
+                "price": -135
+              },
+              {
+                "name": "South Africa",
+                "price": 445
+              },
+              {
+                "name": "Draw",
+                "price": 260
               }
             ]
           }
@@ -3015,11 +3040,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Brazil",
@@ -3040,11 +3065,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:29Z",
             "outcomes": [
               {
                 "name": "Brazil",
@@ -3065,19 +3090,19 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Brazil",
-                "price": -132
+                "price": -137
               },
               {
                 "name": "Japan",
-                "price": 400
+                "price": 390
               },
               {
                 "name": "Draw",
@@ -3090,23 +3115,23 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Brazil",
-                "price": -135
+                "price": -140
               },
               {
                 "name": "Japan",
-                "price": 390
+                "price": 400
               },
               {
                 "name": "Draw",
-                "price": 280
+                "price": 285
               }
             ]
           }
@@ -3115,23 +3140,23 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Brazil",
-                "price": -135
+                "price": -145
               },
               {
                 "name": "Japan",
-                "price": 400
+                "price": 420
               },
               {
                 "name": "Draw",
-                "price": 260
+                "price": 270
               }
             ]
           }
@@ -3140,23 +3165,73 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Brazil",
-                "price": -132
+                "price": -136
               },
               {
                 "name": "Japan",
-                "price": 370
+                "price": 390
               },
               {
                 "name": "Draw",
                 "price": 275
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2026-06-26T16:13:04Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:13:04Z",
+            "outcomes": [
+              {
+                "name": "Brazil",
+                "price": -140
+              },
+              {
+                "name": "Japan",
+                "price": 425
+              },
+              {
+                "name": "Draw",
+                "price": 275
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2026-06-26T16:13:36Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:13:36Z",
+            "outcomes": [
+              {
+                "name": "Brazil",
+                "price": -133
+              },
+              {
+                "name": "Japan",
+                "price": 425
+              },
+              {
+                "name": "Draw",
+                "price": 265
               }
             ]
           }
@@ -3175,11 +3250,11 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:29Z",
             "outcomes": [
               {
                 "name": "Morocco",
@@ -3200,23 +3275,23 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Morocco",
-                "price": 285
+                "price": 255
               },
               {
                 "name": "Netherlands",
-                "price": 110
+                "price": 114
               },
               {
                 "name": "Draw",
-                "price": 235
+                "price": 230
               }
             ]
           }
@@ -3225,11 +3300,11 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Morocco",
@@ -3250,11 +3325,11 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Morocco",
@@ -3275,11 +3350,11 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Morocco",
@@ -3287,7 +3362,32 @@
               },
               {
                 "name": "Netherlands",
-                "price": 110
+                "price": 115
+              },
+              {
+                "name": "Draw",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "bovada",
+        "title": "Bovada",
+        "last_update": "2026-06-26T16:11:13Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:11:13Z",
+            "outcomes": [
+              {
+                "name": "Morocco",
+                "price": 260
+              },
+              {
+                "name": "Netherlands",
+                "price": 115
               },
               {
                 "name": "Draw",
@@ -3298,21 +3398,46 @@
         ]
       },
       {
-        "key": "bovada",
-        "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2026-06-26T16:13:04Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:13:04Z",
             "outcomes": [
               {
                 "name": "Morocco",
-                "price": 260
+                "price": 275
               },
               {
                 "name": "Netherlands",
-                "price": 110
+                "price": 115
+              },
+              {
+                "name": "Draw",
+                "price": 225
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2026-06-26T16:13:36Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:13:36Z",
+            "outcomes": [
+              {
+                "name": "Morocco",
+                "price": 269
+              },
+              {
+                "name": "Netherlands",
+                "price": 117
               },
               {
                 "name": "Draw",
@@ -3335,23 +3460,23 @@
       {
         "key": "draftkings",
         "title": "DraftKings",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:12:51Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:12:51Z",
             "outcomes": [
               {
                 "name": "Bosnia & Herzegovina",
-                "price": 600
+                "price": 700
               },
               {
                 "name": "USA",
-                "price": -205
+                "price": -240
               },
               {
                 "name": "Draw",
-                "price": 340
+                "price": 370
               }
             ]
           }
@@ -3360,23 +3485,23 @@
       {
         "key": "fanduel",
         "title": "FanDuel",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:14Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:14Z",
             "outcomes": [
               {
                 "name": "Bosnia & Herzegovina",
-                "price": 600
+                "price": 700
               },
               {
                 "name": "USA",
-                "price": -220
+                "price": -250
               },
               {
                 "name": "Draw",
-                "price": 330
+                "price": 360
               }
             ]
           }
@@ -3385,11 +3510,11 @@
       {
         "key": "betrivers",
         "title": "BetRivers",
-        "last_update": "2026-06-26T10:35:57Z",
+        "last_update": "2026-06-26T16:13:26Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:57Z",
+            "last_update": "2026-06-26T16:13:26Z",
             "outcomes": [
               {
                 "name": "Bosnia & Herzegovina",
@@ -3397,7 +3522,7 @@
               },
               {
                 "name": "USA",
-                "price": -205
+                "price": -225
               },
               {
                 "name": "Draw",
@@ -3410,23 +3535,23 @@
       {
         "key": "betmgm",
         "title": "BetMGM",
-        "last_update": "2026-06-26T10:35:13Z",
+        "last_update": "2026-06-26T16:13:15Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:13Z",
+            "last_update": "2026-06-26T16:13:15Z",
             "outcomes": [
               {
                 "name": "Bosnia & Herzegovina",
-                "price": 550
+                "price": 650
               },
               {
                 "name": "USA",
-                "price": -210
+                "price": -235
               },
               {
                 "name": "Draw",
-                "price": 333
+                "price": 350
               }
             ]
           }
@@ -3435,23 +3560,23 @@
       {
         "key": "mybookieag",
         "title": "MyBookie.ag",
-        "last_update": "2026-06-26T10:35:25Z",
+        "last_update": "2026-06-26T16:12:29Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:25Z",
+            "last_update": "2026-06-26T16:12:29Z",
             "outcomes": [
               {
                 "name": "Bosnia & Herzegovina",
-                "price": 560
+                "price": 680
               },
               {
                 "name": "USA",
-                "price": -210
+                "price": -250
               },
               {
                 "name": "Draw",
-                "price": 330
+                "price": 360
               }
             ]
           }
@@ -3460,23 +3585,73 @@
       {
         "key": "bovada",
         "title": "Bovada",
-        "last_update": "2026-06-26T10:35:53Z",
+        "last_update": "2026-06-26T16:11:13Z",
         "markets": [
           {
             "key": "h2h",
-            "last_update": "2026-06-26T10:35:53Z",
+            "last_update": "2026-06-26T16:11:13Z",
             "outcomes": [
               {
                 "name": "Bosnia & Herzegovina",
-                "price": 550
+                "price": 650
               },
               {
                 "name": "USA",
-                "price": -200
+                "price": -235
               },
               {
                 "name": "Draw",
-                "price": 340
+                "price": 360
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betus",
+        "title": "BetUS",
+        "last_update": "2026-06-26T16:13:04Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:13:04Z",
+            "outcomes": [
+              {
+                "name": "Bosnia & Herzegovina",
+                "price": 665
+              },
+              {
+                "name": "USA",
+                "price": -225
+              },
+              {
+                "name": "Draw",
+                "price": 360
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "betonlineag",
+        "title": "BetOnline.ag",
+        "last_update": "2026-06-26T16:13:36Z",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-06-26T16:13:36Z",
+            "outcomes": [
+              {
+                "name": "Bosnia & Herzegovina",
+                "price": 700
+              },
+              {
+                "name": "USA",
+                "price": -230
+              },
+              {
+                "name": "Draw",
+                "price": 380
               }
             ]
           }
