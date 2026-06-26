@@ -43,6 +43,8 @@ export interface EcuadorScenario {
   summary: EcuadorSummary;
   unresolvedGroupTies: TieContext[];
   unresolvedThirdTies: TieContext[];
+  route: EcuadorRouteOverview;
+  advancingGroups: string[];
 }
 
 export interface TieContext {
@@ -52,6 +54,15 @@ export interface TieContext {
   title: string;
   description: string;
   teams: string[];
+}
+
+export interface EcuadorRouteOverview {
+  finish: "first" | "second" | "third" | "fourth" | "unknown";
+  slot: string | null;
+  opponent: string | null;
+  venue: string | null;
+  city: string | null;
+  target: string | null;
 }
 
 function makePill(
@@ -698,6 +709,112 @@ function buildSummary(
   return summary;
 }
 
+function buildRouteOverview(
+  groupStates: Record<string, ResolvedGroupState>,
+  thirdRanking: ThirdPlaceRow[],
+  unresolvedThirdTies: TieContext[],
+  comboKey: string,
+): EcuadorRouteOverview {
+  const combo = thirdPlaceLookup.combos_by_key[comboKey] || null;
+  const ecuador = groupStates.E?.ordered.find((row) => row.team === "Ecuador");
+
+  if (!ecuador) {
+    return {
+      finish: "unknown",
+      slot: null,
+      opponent: null,
+      venue: null,
+      city: null,
+      target: null,
+    };
+  }
+
+  if (ecuador.rank === 4) {
+    return {
+      finish: "fourth",
+      slot: null,
+      opponent: null,
+      venue: null,
+      city: null,
+      target: null,
+    };
+  }
+
+  if (ecuador.rank === 2) {
+    const opponent = getGroupPositionTeam(groupStates, "I", 1);
+    const meta = ecuadorPathData.round_of_32["2E"];
+    return {
+      finish: "second",
+      slot: "2E",
+      opponent: opponent?.team ?? null,
+      venue: meta.venue,
+      city: meta.city,
+      target: "2I",
+    };
+  }
+
+  if (ecuador.rank === 1 && combo) {
+    const target = combo.slots["1E"];
+    const opponentGroup = target ? target.replace(/^3/, "") : null;
+    const opponent = opponentGroup
+      ? getGroupPositionTeam(groupStates, opponentGroup, 2)
+      : null;
+    const meta = ecuadorPathData.round_of_32["1E"];
+    return {
+      finish: "first",
+      slot: "1E",
+      opponent: opponent?.team ?? null,
+      venue: meta.venue,
+      city: meta.city,
+      target,
+    };
+  }
+
+  if (ecuador.rank === 3 && !unresolvedThirdTies.length && combo) {
+    const advancing = thirdRanking
+      .slice(0, 8)
+      .some((row) => row.team === "Ecuador");
+    if (!advancing) {
+      return {
+        finish: "third",
+        slot: null,
+        opponent: null,
+        venue: null,
+        city: null,
+        target: null,
+      };
+    }
+
+    const slotEntry = Object.entries(combo.slots).find(
+      ([, team]) => team === "3E",
+    );
+    const slot = slotEntry ? slotEntry[0] : null;
+    const opponentGroup = slot ? slot.replace(/^1/, "") : null;
+    const opponent = opponentGroup
+      ? getGroupPositionTeam(groupStates, opponentGroup, 0)
+      : null;
+    const meta = slot ? ecuadorPathData.round_of_32[slot] : null;
+    return {
+      finish: "third",
+      slot,
+      opponent: opponent?.team ?? null,
+      venue: meta?.venue ?? null,
+      city: meta?.city ?? null,
+      target: "3E",
+    };
+  }
+
+  return {
+    finish:
+      ecuador.rank === 1 ? "first" : ecuador.rank === 3 ? "third" : "unknown",
+    slot: null,
+    opponent: null,
+    venue: null,
+    city: null,
+    target: null,
+  };
+}
+
 export function resolveEcuadorScenario(
   scoreState: Record<string, ScoreOverride>,
   tieOverrides: TieOverrideMap,
@@ -715,6 +832,7 @@ export function resolveEcuadorScenario(
   const thirdResults = rankThirdPlaceTeams(groupStates, tieOverrides);
   const thirdRanking = thirdResults.ordered;
   const unresolvedThirdTies = thirdResults.unresolved;
+  const advancingGroups = thirdRanking.slice(0, 8).map((row) => row.group);
   const comboKey = thirdRanking
     .slice(0, 8)
     .map((row) => row.group)
@@ -733,6 +851,13 @@ export function resolveEcuadorScenario(
     ),
     unresolvedGroupTies,
     unresolvedThirdTies,
+    route: buildRouteOverview(
+      groupStates,
+      thirdRanking,
+      unresolvedThirdTies,
+      comboKey,
+    ),
+    advancingGroups,
   };
 }
 

@@ -433,6 +433,21 @@
   line-height: 1.6;
 }
 
+.route-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.route-detail-card {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(245, 248, 249, 0.95);
+  border: 1px solid rgba(24, 33, 43, 0.08);
+  display: grid;
+  gap: 8px;
+}
+
 .tie-alerts-grid {
   display: grid;
   gap: 14px;
@@ -679,6 +694,7 @@
   }
 
   .ecuador-grid,
+  .route-detail-grid,
   .sim-groups-grid,
   .tie-alert-card,
   .date-group__header,

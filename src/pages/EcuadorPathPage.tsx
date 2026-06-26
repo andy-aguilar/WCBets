@@ -32,6 +32,9 @@ export function EcuadorPathPage() {
     simulation.groupStates.E?.ordered.findIndex(
       (team) => team.team === "Ecuador",
     ) + 1 || 0;
+  const totalTieAlerts =
+    simulation.unresolvedGroupTies.length +
+    simulation.unresolvedThirdTies.length;
 
   return (
     <main className="page-shell">
@@ -57,6 +60,10 @@ export function EcuadorPathPage() {
           <div className="status-item">
             <span className="status-label">Third-place combo</span>
             <strong>{simulation.comboKey || "—"}</strong>
+          </div>
+          <div className="status-item">
+            <span className="status-label">Tie alerts</span>
+            <strong>{totalTieAlerts}</strong>
           </div>
         </div>
       </section>
@@ -155,6 +162,29 @@ export function EcuadorPathPage() {
             ))}
           </div>
 
+          <div className="route-detail-grid">
+            <div className="route-detail-card">
+              <span className="status-label">Projected finish</span>
+              <strong>{simulation.route.finish}</strong>
+            </div>
+            <div className="route-detail-card">
+              <span className="status-label">Round of 32 slot</span>
+              <strong>{simulation.route.slot || "—"}</strong>
+            </div>
+            <div className="route-detail-card">
+              <span className="status-label">Opponent</span>
+              <strong>{simulation.route.opponent || "TBD"}</strong>
+            </div>
+            <div className="route-detail-card">
+              <span className="status-label">Location</span>
+              <strong>
+                {simulation.route.city
+                  ? `${simulation.route.city}${simulation.route.venue ? ` · ${simulation.route.venue}` : ""}`
+                  : "TBD"}
+              </strong>
+            </div>
+          </div>
+
           <div className="slot-list">
             {ROUND_OF_32_SLOTS.map((slot) => (
               <div className="slot-card" key={slot.slot}>
@@ -178,56 +208,82 @@ export function EcuadorPathPage() {
           <div className="ecuador-card__header">
             <div>
               <p className="eyebrow">Third-place race</p>
-              <h2>Top 12 snapshot</h2>
+              <h2>Advancing combo</h2>
             </div>
             <span className="ecuador-card__meta">
-              Groups ranked by points, GD, goals for
+              Top eight third-place groups feeding the official lookup table
             </span>
           </div>
 
-          <div className="table-scroll">
-            <table className="bets-table ecuador-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Team</th>
-                  <th>Grp</th>
-                  <th>Pts</th>
-                  <th>GD</th>
-                  <th>GF</th>
-                </tr>
-              </thead>
-              <tbody>
-                {simulation.thirdRanking.map((row) => (
-                  <tr
-                    key={`${row.group}-${row.team}`}
-                    className={
-                      row.team === "Ecuador"
-                        ? "ecuador-table__focus"
-                        : row.unresolvedCutoff
-                          ? "ecuador-table__warn"
-                          : ""
-                    }
-                  >
-                    <td>{row.third_rank}</td>
-                    <td>
-                      {row.team}
-                      {row.rankingResolution === "manual-needed" ? (
-                        <span className="inline-status">tie</span>
-                      ) : row.rankingResolution === "manual" ? (
-                        <span className="inline-status">manual</span>
-                      ) : null}
-                    </td>
-                    <td>{row.group}</td>
-                    <td>{row.points}</td>
-                    <td>{row.goal_difference}</td>
-                    <td>{row.goals_for}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="sim-pill-row">
+            {simulation.advancingGroups.map((group) => (
+              <span className="sim-pill good" key={group}>
+                Group {group}
+              </span>
+            ))}
+          </div>
+
+          <div className="ecuador-summary-text">
+            Combo key <strong>{simulation.comboKey || "—"}</strong> is the
+            sorted eight-group signature used to resolve where `3E` lands in the
+            bracket.
           </div>
         </article>
+      </section>
+
+      <section className="ecuador-card">
+        <div className="ecuador-card__header">
+          <div>
+            <p className="eyebrow">Third-place race</p>
+            <h2>Top 12 snapshot</h2>
+          </div>
+          <span className="ecuador-card__meta">
+            Groups ranked by points, GD, goals for
+          </span>
+        </div>
+
+        <div className="table-scroll">
+          <table className="bets-table ecuador-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>Grp</th>
+                <th>Pts</th>
+                <th>GD</th>
+                <th>GF</th>
+              </tr>
+            </thead>
+            <tbody>
+              {simulation.thirdRanking.map((row) => (
+                <tr
+                  key={`${row.group}-${row.team}`}
+                  className={
+                    row.team === "Ecuador"
+                      ? "ecuador-table__focus"
+                      : row.unresolvedCutoff
+                        ? "ecuador-table__warn"
+                        : ""
+                  }
+                >
+                  <td>{row.third_rank}</td>
+                  <td>
+                    {row.team}
+                    {row.rankingResolution === "manual-needed" ? (
+                      <span className="inline-status">tie</span>
+                    ) : row.rankingResolution === "manual" ? (
+                      <span className="inline-status">manual</span>
+                    ) : null}
+                  </td>
+                  <td>{row.group}</td>
+                  <td>{row.points}</td>
+                  <td>{row.goal_difference}</td>
+                  <td>{row.goals_for}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section className="ecuador-card">
