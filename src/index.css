@@ -1,8 +1,5 @@
 :root {
-  font-family:
-    "IBM Plex Sans",
-    "Segoe UI",
-    sans-serif;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #17212b;
@@ -32,10 +29,7 @@ body {
 
 h1 {
   margin: 0;
-  font-family:
-    "Space Grotesk",
-    "Avenir Next",
-    sans-serif;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
   font-size: clamp(3rem, 8vw, 5.5rem);
   line-height: 0.96;
   letter-spacing: -0.05em;
