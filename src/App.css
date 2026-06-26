@@ -89,13 +89,12 @@
   flex-wrap: wrap;
 }
 
-.cards-grid {
+.table-card {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.bet-card {
+.date-group {
   padding: 22px;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.84);
@@ -105,77 +104,80 @@
   gap: 16px;
 }
 
-.bet-card-top {
+.date-group__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.date-group__header h2 {
+  font-size: 1.1rem;
+  line-height: 1.1;
+}
+
+.date-group__header span {
+  color: #6d7a86;
+  font-size: 0.88rem;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.bets-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.bets-table th {
+  padding: 0 10px 12px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.74rem;
+  color: #6d7a86;
+}
+
+.bets-table td {
+  padding: 10px;
+  border-top: 1px solid rgba(24, 33, 43, 0.08);
+  color: #22303d;
+}
+
+.game-row td {
+  padding: 16px 10px 10px;
+  border-top: none;
+}
+
+.game-row__inner {
   display: flex;
   justify-content: space-between;
   gap: 16px;
   align-items: start;
 }
 
-.card-date {
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.8rem;
-  color: #91653e;
+.game-row__meta {
+  display: block;
+  margin-top: 6px;
+  color: #6d7a86;
+  font-size: 0.9rem;
 }
 
-.predicted-score {
-  min-width: 68px;
-  padding: 10px 12px;
-  border-radius: 16px;
-  text-align: center;
+.game-row__badge {
+  padding: 8px 12px;
+  border-radius: 999px;
   background: #17212b;
   color: #fff7e8;
-  font-weight: 700;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
-.xg-row,
-.book-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  color: #485966;
-  font-size: 0.95rem;
-}
-
-.xg-row strong,
-.book-row strong {
-  color: #17212b;
-  text-align: right;
-}
-
-.market-table {
-  display: grid;
-  gap: 8px;
-}
-
-.market-row {
-  display: grid;
-  grid-template-columns: 1.3fr 0.8fr 0.9fr 0.7fr;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 14px;
-  background: rgba(235, 241, 243, 0.7);
-  align-items: center;
-}
-
-.market-row--header {
-  background: transparent;
-  padding: 0 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.75rem;
-  color: #6d7a86;
-}
-
-.incentive-note {
-  margin: 0;
-  padding: 14px 16px;
-  border-radius: 16px;
-  background: rgba(240, 193, 133, 0.22);
+.incentive-row td {
+  padding: 12px 14px 16px;
   color: #65421f;
-  line-height: 1.55;
+  background: rgba(240, 193, 133, 0.18);
 }
 
 .eyebrow {
@@ -223,19 +225,18 @@
 
   .site-header,
   .page-hero,
-  .bet-card {
+  .date-group {
     padding: 20px;
   }
 
-  .site-header,
-  .bet-card-top,
-  .xg-row,
-  .book-row {
+  .site-header {
     grid-template-columns: 1fr;
     display: grid;
   }
 
-  .market-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .date-group__header,
+  .game-row__inner {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
