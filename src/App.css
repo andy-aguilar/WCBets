@@ -257,6 +257,25 @@
   box-shadow: 0 20px 42px rgba(14, 22, 31, 0.16);
 }
 
+.odds-trigger {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #8b5e34;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+.odds-trigger:hover {
+  color: #5d3a18;
+}
+
+.odds-popover {
+  width: min(240px, calc(100vw - 48px));
+}
+
 .popover-title {
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -268,6 +287,32 @@
 .popover-body {
   color: #465763;
   line-height: 1.55;
+}
+
+.popover-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 0.94rem;
+}
+
+.popover-row + .popover-row {
+  border-top: 1px solid rgba(24, 33, 43, 0.08);
+}
+
+.popover-row--best .pop-book,
+.popover-row--best .pop-odds {
+  color: #17212b;
+  font-weight: 700;
+}
+
+.pop-book {
+  color: #52626f;
+}
+
+.pop-odds {
+  color: #8b5e34;
 }
 
 .eyebrow {
@@ -308,6 +353,82 @@
   font-size: 0.98rem;
 }
 
+.ecuador-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.ecuador-card {
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(24, 33, 43, 0.09);
+  box-shadow: 0 14px 32px rgba(19, 27, 37, 0.08);
+  display: grid;
+  gap: 16px;
+}
+
+.ecuador-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: end;
+}
+
+.ecuador-card__header h2 {
+  font-size: 1.1rem;
+  line-height: 1.1;
+}
+
+.ecuador-card__meta {
+  color: #6d7a86;
+  font-size: 0.88rem;
+}
+
+.ecuador-table__focus td {
+  background: rgba(240, 193, 133, 0.14);
+  color: #17212b;
+  font-weight: 700;
+}
+
+.slot-list,
+.match-list {
+  display: grid;
+  gap: 12px;
+}
+
+.slot-card,
+.match-card {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(245, 248, 249, 0.95);
+  border: 1px solid rgba(24, 33, 43, 0.08);
+  display: grid;
+  gap: 6px;
+}
+
+.slot-card__top,
+.match-card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.slot-card p,
+.match-card p {
+  margin: 0;
+  color: #22303d;
+}
+
+.slot-card__meta,
+.match-card span {
+  color: #6d7a86;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 720px) {
   .app-shell {
     padding: 16px;
@@ -328,7 +449,11 @@
     grid-template-columns: 1fr;
   }
 
+  .ecuador-grid,
   .date-group__header,
+  .ecuador-card__header,
+  .slot-card__top,
+  .match-card__top,
   .game-row__inner {
     display: grid;
     grid-template-columns: 1fr;

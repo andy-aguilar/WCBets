@@ -103,10 +103,12 @@ export function BettingPage() {
   const [customKellyInput, setCustomKellyInput] = useState("");
   const [valueOnly, setValueOnly] = useState(false);
   const [openIncentiveId, setOpenIncentiveId] = useState<string | null>(null);
+  const [openOddsId, setOpenOddsId] = useState<string | null>(null);
 
   useEffect(() => {
     function handleClickOutside() {
       setOpenIncentiveId(null);
+      setOpenOddsId(null);
     }
 
     document.addEventListener("click", handleClickOutside);
@@ -366,7 +368,60 @@ export function BettingPage() {
                                 <td>{row.label}</td>
                                 <td>{row.modelPercent}%</td>
                                 <td>{formatAmericanOdds(row.modelOdds)}</td>
-                                <td>{formatAmericanOdds(row.marketOdds)}</td>
+                                <td>
+                                  {row.marketOdds != null ? (
+                                    <button
+                                      type="button"
+                                      className="odds-trigger"
+                                      onClick={(event) => {
+                                        event.stopPropagation();
+                                        setOpenOddsId((current) =>
+                                          current ===
+                                          `${game.game_id}-${row.side}`
+                                            ? null
+                                            : `${game.game_id}-${row.side}`,
+                                        );
+                                      }}
+                                    >
+                                      {formatAmericanOdds(row.marketOdds)}
+                                    </button>
+                                  ) : (
+                                    "—"
+                                  )}
+                                  {openOddsId ===
+                                    `${game.game_id}-${row.side}` &&
+                                  game.all_market_odds?.[row.side]?.length ? (
+                                    <div
+                                      className="inline-popover odds-popover"
+                                      onClick={(event) =>
+                                        event.stopPropagation()
+                                      }
+                                    >
+                                      <div className="popover-title">
+                                        Market odds
+                                      </div>
+                                      <div className="popover-body">
+                                        {game.all_market_odds[row.side].map(
+                                          (offer) => (
+                                            <div
+                                              key={`${game.game_id}-${row.side}-${offer.bookmaker}-${offer.odds}`}
+                                              className={`popover-row${offer.odds === row.marketOdds ? " popover-row--best" : ""}`}
+                                            >
+                                              <span className="pop-book">
+                                                {formatBookmaker(
+                                                  offer.bookmaker,
+                                                )}
+                                              </span>
+                                              <span className="pop-odds">
+                                                {formatAmericanOdds(offer.odds)}
+                                              </span>
+                                            </div>
+                                          ),
+                                        )}
+                                      </div>
+                                    </div>
+                                  ) : null}
+                                </td>
                                 <td>{formatBookmaker(row.bookmaker)}</td>
                                 <td>
                                   {formatEdge(row.modelOdds, row.marketOdds)}
