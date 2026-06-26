@@ -15,7 +15,7 @@
     "beta": {
       "name": "atlas-bets-beta",
       "assets": {
-        "directory": "./frontend/dist"
+        "directory": "./dist"
       }
     }
   }
