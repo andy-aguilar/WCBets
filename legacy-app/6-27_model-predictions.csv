@@ -1,0 +1,16 @@
+date,fifa_code,prob_win,proj_gf,fifa_code_opp,prob_loss,proj_gf_opp,prob_draw,modal_score,penalty_et_results
+6/27,:gb-eng: ENG,75,2.3,:pa: PAN,6,0.5,19,1-0,
+6/27,:hr: CRO,61,1.9,:gh: GHA,14,0.8,25,1-0,
+6/27,:at: AUT,38,1.1,:dz: ALG,27,0.8,35,0-0,
+6/27,:ar: ARG,88,3.2,:jo: JOR,2,0.3,11,2-0,
+6/27,:co: COL,36,1.2,:pt: POR,33,1.2,31,0-0,
+6/27,:cd: COD,51,2.1,:uz: UZB,26,1.4,24,1-1,
+6/28,:ca: CAN 🏠,65,1.8,:za: RSA,19,0.8,16,1-0,"ET: CAN 8%, RSA 3%; PK: CAN 9%, RSA 7%"
+6/29,:de: GER,68,2.2,:py: PAR,18,1,14,1-0,"ET: GER 6%, PAR 3%; PK: GER 8%, PAR 6%"
+6/29,:nl: NED,58,1.6,:ma: MAR,25,0.9,17,1-0,"ET: NED 7%, MAR 4%; PK: NED 9%, MAR 8%"
+6/29,:br: BRA,65,1.9,:jp: JPN,20,0.9,15,1-0,"ET: BRA 7%, JPN 3%; PK: BRA 8%, JPN 7%"
+6/30,:fr: FRA,87,3,:se: SWE,5,0.5,8,1-0,"ET: FRA 5%, SWE 1%; PK: FRA 5%, SWE 3%"
+6/30,:no: NOR,72,2.2,:ci: CIV,15,0.8,13,1-0,"ET: NOR 6%, CIV 2%; PK: NOR 8%, CIV 6%"
+7/1,:us: USA 🏠,77,2.4,:ba: BIH,11,0.7,12,1-0,"ET: USA 6%, BIH 2%; PK: USA 7%, BIH 5%"
+7/3,:ar: ARG,93,3.4,:cv: CPV,1,0.2,5,2-0,"ET: ARG 3%, CPV 0%; PK: ARG 4%, CPV 2%"
+7/3,:au: AUS,46,1.4,:eg: EGY,35,1.2,18,1-0,"ET: AUS 7%, EGY 6%; PK: AUS 9%, EGY 9%"

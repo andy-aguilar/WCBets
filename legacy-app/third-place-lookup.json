@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T16:13:46.265Z",
+  "generated_at": "2026-06-27T10:18:14.489Z",
   "source": "https://en.wikipedia.org/w/api.php?action=parse&page=Template:2026_FIFA_World_Cup_third-place_table&prop=wikitext&format=json",
   "slot_order": [
     "1A",
@@ -1264,7 +1264,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -1714,7 +1714,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -1739,7 +1739,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3I",
@@ -1764,7 +1764,7 @@
         "J",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -1789,7 +1789,7 @@
         "J",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -1814,7 +1814,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -1914,7 +1914,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -1939,7 +1939,7 @@
         "J",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -1964,7 +1964,7 @@
         "J",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -1989,7 +1989,7 @@
         "I",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -2014,7 +2014,7 @@
         "I",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -2039,7 +2039,7 @@
         "I",
         "J"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -8764,7 +8764,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -8789,7 +8789,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3I",
@@ -8814,7 +8814,7 @@
         "J",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -8839,7 +8839,7 @@
         "J",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -8864,7 +8864,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -8889,7 +8889,7 @@
         "J",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -8914,7 +8914,7 @@
         "J",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -8939,7 +8939,7 @@
         "I",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -8964,7 +8964,7 @@
         "I",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -8989,7 +8989,7 @@
         "I",
         "J"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -9014,7 +9014,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -9039,7 +9039,7 @@
         "J",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -9064,7 +9064,7 @@
         "J",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -9164,7 +9164,7 @@
         "H",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -9189,7 +9189,7 @@
         "H",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -9214,7 +9214,7 @@
         "H",
         "J"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -9239,7 +9239,7 @@
         "H",
         "I"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -12039,7 +12039,7 @@
         "K",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3E",
@@ -12064,7 +12064,7 @@
         "J",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3J",
@@ -12089,7 +12089,7 @@
         "J",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3J",
@@ -12114,7 +12114,7 @@
         "I",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3E",
@@ -12139,7 +12139,7 @@
         "I",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3E",
@@ -12164,7 +12164,7 @@
         "I",
         "J"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3J",
@@ -12189,7 +12189,7 @@
         "H",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3F",
@@ -12214,7 +12214,7 @@
         "H",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -12239,7 +12239,7 @@
         "H",
         "J"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -12264,7 +12264,7 @@
         "H",
         "I"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -12289,7 +12289,7 @@
         "G",
         "L"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3G",
@@ -12314,7 +12314,7 @@
         "G",
         "K"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3G",
@@ -12339,7 +12339,7 @@
         "G",
         "J"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3G",
@@ -12389,7 +12389,7 @@
         "G",
         "H"
       ],
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -13091,7 +13091,7 @@
     },
     "BEFGHJKL": {
       "option": 50,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -13343,7 +13343,7 @@
     },
     "BDEFHJKL": {
       "option": 68,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -13357,7 +13357,7 @@
     },
     "BDEFHIKL": {
       "option": 69,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3I",
@@ -13371,7 +13371,7 @@
     },
     "BDEFHIJL": {
       "option": 70,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -13385,7 +13385,7 @@
     },
     "BDEFHIJK": {
       "option": 71,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -13399,7 +13399,7 @@
     },
     "BDEFGJKL": {
       "option": 72,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -13455,7 +13455,7 @@
     },
     "BDEFGHKL": {
       "option": 76,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -13469,7 +13469,7 @@
     },
     "BDEFGHJL": {
       "option": 77,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -13483,7 +13483,7 @@
     },
     "BDEFGHJK": {
       "option": 78,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -13497,7 +13497,7 @@
     },
     "BDEFGHIL": {
       "option": 79,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -13511,7 +13511,7 @@
     },
     "BDEFGHIK": {
       "option": 80,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -13525,7 +13525,7 @@
     },
     "BDEFGHIJ": {
       "option": 81,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -17291,7 +17291,7 @@
     },
     "ABDEFJKL": {
       "option": 350,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -17305,7 +17305,7 @@
     },
     "ABDEFIKL": {
       "option": 351,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3I",
@@ -17319,7 +17319,7 @@
     },
     "ABDEFIJL": {
       "option": 352,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -17333,7 +17333,7 @@
     },
     "ABDEFIJK": {
       "option": 353,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3J",
@@ -17347,7 +17347,7 @@
     },
     "ABDEFHKL": {
       "option": 354,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -17361,7 +17361,7 @@
     },
     "ABDEFHJL": {
       "option": 355,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -17375,7 +17375,7 @@
     },
     "ABDEFHJK": {
       "option": 356,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -17389,7 +17389,7 @@
     },
     "ABDEFHIL": {
       "option": 357,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -17403,7 +17403,7 @@
     },
     "ABDEFHIK": {
       "option": 358,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -17417,7 +17417,7 @@
     },
     "ABDEFHIJ": {
       "option": 359,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -17431,7 +17431,7 @@
     },
     "ABDEFGKL": {
       "option": 360,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -17445,7 +17445,7 @@
     },
     "ABDEFGJL": {
       "option": 361,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -17459,7 +17459,7 @@
     },
     "ABDEFGJK": {
       "option": 362,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3E",
         "1B": "3G",
@@ -17515,7 +17515,7 @@
     },
     "ABDEFGHL": {
       "option": 366,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -17529,7 +17529,7 @@
     },
     "ABDEFGHK": {
       "option": 367,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -17543,7 +17543,7 @@
     },
     "ABDEFGHJ": {
       "option": 368,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -17557,7 +17557,7 @@
     },
     "ABDEFGHI": {
       "option": 369,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
@@ -19125,7 +19125,7 @@
     },
     "ABCDEFKL": {
       "option": 481,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3E",
@@ -19139,7 +19139,7 @@
     },
     "ABCDEFJL": {
       "option": 482,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3J",
@@ -19153,7 +19153,7 @@
     },
     "ABCDEFJK": {
       "option": 483,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3J",
@@ -19167,7 +19167,7 @@
     },
     "ABCDEFIL": {
       "option": 484,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3E",
@@ -19181,7 +19181,7 @@
     },
     "ABCDEFIK": {
       "option": 485,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3E",
@@ -19195,7 +19195,7 @@
     },
     "ABCDEFIJ": {
       "option": 486,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3J",
@@ -19209,7 +19209,7 @@
     },
     "ABCDEFHL": {
       "option": 487,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3F",
@@ -19223,7 +19223,7 @@
     },
     "ABCDEFHK": {
       "option": 488,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -19237,7 +19237,7 @@
     },
     "ABCDEFHJ": {
       "option": 489,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3J",
@@ -19251,7 +19251,7 @@
     },
     "ABCDEFHI": {
       "option": 490,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3E",
@@ -19265,7 +19265,7 @@
     },
     "ABCDEFGL": {
       "option": 491,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3G",
@@ -19279,7 +19279,7 @@
     },
     "ABCDEFGK": {
       "option": 492,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3G",
@@ -19293,7 +19293,7 @@
     },
     "ABCDEFGJ": {
       "option": 493,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3C",
         "1B": "3G",
@@ -19321,7 +19321,7 @@
     },
     "ABCDEFGH": {
       "option": 495,
-      "still_possible": true,
+      "still_possible": false,
       "slots": {
         "1A": "3H",
         "1B": "3G",
