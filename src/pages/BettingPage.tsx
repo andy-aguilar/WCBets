@@ -344,11 +344,6 @@ export function BettingPage() {
                                     {game.away_xg.toFixed(1)}
                                   </span>
                                 </div>
-                                <div className="game-row__badge">
-                                  {game.home_field
-                                    ? "Home edge spot"
-                                    : "Neutral"}
-                                </div>
                               </div>
                             </td>
                           </tr>

@@ -6,6 +6,7 @@ const path = require("path");
 
 const ROOT = __dirname;
 const OUTPUT_PATH = path.join(ROOT, "ecuador-path-data.json");
+const OVERRIDES_PATH = path.join(ROOT, "ecuador-path-overrides.json");
 const USER_AGENT = "AthenaBot/1.0 (personal research for local dashboard)";
 const GROUP_LETTERS = "ABCDEFGHIJKL".split("");
 const GROUP_PAGES = Object.fromEntries(
@@ -382,6 +383,35 @@ function buildCurrentStandings(groups) {
   return summary;
 }
 
+function loadScoreOverrides() {
+  if (!fs.existsSync(OVERRIDES_PATH)) {
+    return {};
+  }
+
+  return JSON.parse(fs.readFileSync(OVERRIDES_PATH, "utf8"));
+}
+
+function applyScoreOverrides(groups, overrides) {
+  if (!overrides || typeof overrides !== "object") {
+    return;
+  }
+
+  Object.values(groups).forEach((group) => {
+    group.matches = group.matches.map((match) => {
+      const override = overrides[match.id];
+      if (!override) return match;
+
+      return {
+        ...match,
+        raw: `${override.home_score}-${override.away_score}`,
+        played: true,
+        home_score: Number(override.home_score),
+        away_score: Number(override.away_score),
+      };
+    });
+  });
+}
+
 async function main() {
   const groupHtmlPages = [];
   for (const letter of GROUP_LETTERS) {
@@ -393,6 +423,7 @@ async function main() {
   const groups = Object.fromEntries(
     groupHtmlPages.map(([letter, html]) => [letter, parseGroupPage(letter, html)])
   );
+  applyScoreOverrides(groups, loadScoreOverrides());
 
   const roundHtml = await fetchHtml(ROUND_OF_32_PAGE);
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T16:13:51.493Z",
+  "generated_at": "2026-06-27T10:18:19.813Z",
   "source": {
     "groups": {
       "A": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_A",
@@ -703,10 +703,10 @@
           "time_text": "8:00 p.m.",
           "venue": "Lumen Field",
           "city": "Seattle",
-          "raw": "Match 63",
-          "played": false,
-          "home_score": null,
-          "away_score": null
+          "raw": "1-1",
+          "played": true,
+          "home_score": 1,
+          "away_score": 1
         },
         {
           "id": "G-6",
@@ -718,10 +718,10 @@
           "time_text": "8:00 p.m.",
           "venue": "BC Place",
           "city": "Vancouver",
-          "raw": "Match 64",
-          "played": false,
-          "home_score": null,
-          "away_score": null
+          "raw": "1-5",
+          "played": true,
+          "home_score": 1,
+          "away_score": 5
         }
       ]
     },
@@ -804,10 +804,10 @@
           "time_text": "7:00 p.m. UTC−5",
           "venue": "NRG Stadium",
           "city": "Houston",
-          "raw": "Match 65",
-          "played": false,
-          "home_score": null,
-          "away_score": null
+          "raw": "0-0",
+          "played": true,
+          "home_score": 0,
+          "away_score": 0
         },
         {
           "id": "H-6",
@@ -819,10 +819,10 @@
           "time_text": "6:00 p.m. UTC−6",
           "venue": "Estadio Akron",
           "city": "Zapopan",
-          "raw": "Match 66",
-          "played": false,
-          "home_score": null,
-          "away_score": null
+          "raw": "0-1",
+          "played": true,
+          "home_score": 0,
+          "away_score": 1
         }
       ]
     },
@@ -905,10 +905,10 @@
           "time_text": "3:00 p.m.",
           "venue": "Gillette Stadium",
           "city": "Foxborough",
-          "raw": "1–3",
+          "raw": "1–4",
           "played": true,
           "home_score": 1,
-          "away_score": 3
+          "away_score": 4
         },
         {
           "id": "I-6",
@@ -1536,49 +1536,49 @@
       {
         "team": "Belgium",
         "group": "G",
-        "played": 2,
-        "wins": 0,
+        "played": 3,
+        "wins": 1,
         "draws": 2,
         "losses": 0,
-        "goals_for": 1,
-        "goals_against": 1,
-        "goal_difference": 0,
-        "points": 2
+        "goals_for": 6,
+        "goals_against": 2,
+        "goal_difference": 4,
+        "points": 5
       },
       {
         "team": "Egypt",
         "group": "G",
-        "played": 2,
+        "played": 3,
         "wins": 1,
-        "draws": 1,
+        "draws": 2,
         "losses": 0,
-        "goals_for": 4,
-        "goals_against": 2,
+        "goals_for": 5,
+        "goals_against": 3,
         "goal_difference": 2,
-        "points": 4
+        "points": 5
       },
       {
         "team": "Iran",
         "group": "G",
-        "played": 2,
+        "played": 3,
         "wins": 0,
-        "draws": 2,
+        "draws": 3,
         "losses": 0,
-        "goals_for": 2,
-        "goals_against": 2,
+        "goals_for": 3,
+        "goals_against": 3,
         "goal_difference": 0,
-        "points": 2
+        "points": 3
       },
       {
         "team": "New Zealand",
         "group": "G",
-        "played": 2,
+        "played": 3,
         "wins": 0,
         "draws": 1,
-        "losses": 1,
-        "goals_for": 3,
-        "goals_against": 5,
-        "goal_difference": -2,
+        "losses": 2,
+        "goals_for": 4,
+        "goals_against": 10,
+        "goal_difference": -6,
         "points": 1
       }
     ],
@@ -1586,49 +1586,49 @@
       {
         "team": "Cape Verde",
         "group": "H",
-        "played": 2,
+        "played": 3,
         "wins": 0,
-        "draws": 2,
+        "draws": 3,
         "losses": 0,
         "goals_for": 2,
         "goals_against": 2,
         "goal_difference": 0,
-        "points": 2
+        "points": 3
       },
       {
         "team": "Saudi Arabia",
         "group": "H",
-        "played": 2,
+        "played": 3,
         "wins": 0,
-        "draws": 1,
+        "draws": 2,
         "losses": 1,
         "goals_for": 1,
         "goals_against": 5,
         "goal_difference": -4,
-        "points": 1
+        "points": 2
       },
       {
         "team": "Spain",
         "group": "H",
-        "played": 2,
-        "wins": 1,
+        "played": 3,
+        "wins": 2,
         "draws": 1,
         "losses": 0,
-        "goals_for": 4,
+        "goals_for": 5,
         "goals_against": 0,
-        "goal_difference": 4,
-        "points": 4
+        "goal_difference": 5,
+        "points": 7
       },
       {
         "team": "Uruguay",
         "group": "H",
-        "played": 2,
+        "played": 3,
         "wins": 0,
         "draws": 2,
-        "losses": 0,
+        "losses": 1,
         "goals_for": 3,
-        "goals_against": 3,
-        "goal_difference": 0,
+        "goals_against": 4,
+        "goal_difference": -1,
         "points": 2
       }
     ],
@@ -1640,9 +1640,9 @@
         "wins": 3,
         "draws": 0,
         "losses": 0,
-        "goals_for": 9,
+        "goals_for": 10,
         "goals_against": 2,
-        "goal_difference": 7,
+        "goal_difference": 8,
         "points": 9
       },
       {
@@ -1665,8 +1665,8 @@
         "draws": 0,
         "losses": 1,
         "goals_for": 8,
-        "goals_against": 6,
-        "goal_difference": 2,
+        "goals_against": 7,
+        "goal_difference": 1,
         "points": 6
       },
       {
@@ -1834,46 +1834,6 @@
     ]
   },
   "round_of_32": {
-    "1E": {
-      "slot": "1E",
-      "slot_meta": {
-        "position": "winner",
-        "group": "E"
-      },
-      "source": "lookup",
-      "fixed_opponent_slot": null,
-      "heading": "Germany vs 3rd Group C/D/F",
-      "reference_title": "Germany vs 3ABCDF",
-      "match_index": 3,
-      "date_text": "June 29, 2026 (2026-06-29)",
-      "time_text": "4:30 p.m. UTC−4",
-      "venue": "Gillette Stadium",
-      "city": "Foxborough",
-      "raw": "Match 74",
-      "played": false,
-      "home_score": null,
-      "away_score": null
-    },
-    "2E": {
-      "slot": "2E",
-      "slot_meta": {
-        "position": "runner_up",
-        "group": "E"
-      },
-      "source": "fixed",
-      "fixed_opponent_slot": "2I",
-      "heading": "Ivory Coast vs Runner-up Group I",
-      "reference_title": "Côte d'Ivoire vs 2I",
-      "match_index": 5,
-      "date_text": "June 30, 2026 (2026-06-30)",
-      "time_text": "12:00 p.m. UTC−5",
-      "venue": "AT&T Stadium",
-      "city": "Arlington",
-      "raw": "Match 78",
-      "played": false,
-      "home_score": null,
-      "away_score": null
-    },
     "1A": {
       "slot": "1A",
       "slot_meta": {
@@ -1882,7 +1842,7 @@
       },
       "source": "lookup",
       "fixed_opponent_slot": null,
-      "heading": "Mexico vs 3rd Group C/E/H",
+      "heading": "Mexico vs 3rd Group C/E",
       "reference_title": "Mexico vs 3CEFHI",
       "match_index": 7,
       "date_text": "June 30, 2026 (2026-06-30)",
@@ -1902,7 +1862,7 @@
       },
       "source": "lookup",
       "fixed_opponent_slot": null,
-      "heading": "Winner Group L vs 3rd Group E/I/J/K",
+      "heading": "Winner Group L vs 3rd Group I/J/K",
       "reference_title": "1L vs 3EHIJK",
       "match_index": 8,
       "date_text": "July 1, 2026 (2026-07-01)",
@@ -1922,7 +1882,7 @@
       },
       "source": "lookup",
       "fixed_opponent_slot": null,
-      "heading": "Switzerland vs 3rd Group E/F/G/I/J",
+      "heading": "Switzerland vs 3rd Group G/J",
       "reference_title": "Switzerland vs 3EFGIJ",
       "match_index": 13,
       "date_text": "July 2, 2026 (2026-07-02)",
@@ -1942,7 +1902,7 @@
       },
       "source": "lookup",
       "fixed_opponent_slot": null,
-      "heading": "Winner Group K vs 3rd Group D/E/I/J/L",
+      "heading": "Winner Group K vs 3rd Group E/I/L",
       "reference_title": "1K vs 3DEIJL",
       "match_index": 16,
       "date_text": "July 3, 2026 (2026-07-03)",

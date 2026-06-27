@@ -232,15 +232,6 @@
   font-size: 0.9rem;
 }
 
-.game-row__badge {
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: #17212b;
-  color: #fff7e8;
-  font-size: 0.8rem;
-  white-space: nowrap;
-}
-
 .info-trigger {
   width: 24px;
   height: 24px;
@@ -675,22 +666,120 @@
 
 @media (max-width: 720px) {
   .app-shell {
-    padding: 16px;
+    padding: 12px;
   }
 
   .site-header,
   .page-hero,
   .date-group {
-    padding: 20px;
+    padding: 18px;
   }
 
   .site-header {
     grid-template-columns: 1fr;
     display: grid;
+    padding: 18px;
+    gap: 14px;
   }
 
   .controls-card {
     grid-template-columns: 1fr;
+    padding: 16px 18px;
+  }
+
+  .top-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
+    padding: 12px 10px;
+  }
+
+  .page-hero {
+    padding: 24px 18px;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .status-item {
+    min-width: 0;
+    padding: 14px;
+  }
+
+  .tagline {
+    font-size: 0.98rem;
+  }
+
+  .table-scroll {
+    margin: 0 -6px;
+    padding: 0 6px 4px;
+  }
+
+  .bets-table {
+    min-width: 620px;
+  }
+
+  .bets-table th {
+    padding: 0 8px 10px;
+    font-size: 0.68rem;
+  }
+
+  .bets-table td {
+    padding: 9px 8px;
+    font-size: 0.92rem;
+  }
+
+  .game-row td {
+    padding: 14px 8px 10px;
+  }
+
+  .game-row__meta {
+    font-size: 0.84rem;
+  }
+
+  .inline-popover {
+    width: min(280px, calc(100vw - 36px));
+  }
+
+  .ecuador-card {
+    padding: 18px;
+  }
+
+  .ecuador-controls__actions {
+    justify-content: stretch;
+  }
+
+  .ecuador-controls__actions .action-button {
+    width: 100%;
+  }
+
+  .sim-group-card,
+  .slot-card,
+  .match-card,
+  .route-detail-card {
+    padding: 14px;
+  }
+
+  .sim-score-grid {
+    grid-template-columns: 1fr 64px;
+  }
+
+  .sim-score-grid input {
+    padding: 9px 10px;
+  }
+
+  .tie-modal-backdrop {
+    padding: 12px;
+  }
+
+  .tie-modal {
+    padding: 18px;
   }
 
   .ecuador-grid,
