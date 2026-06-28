@@ -1,1044 +1,12 @@
 {
-  "last_updated": "Jun 27, 2026, 6:18 AM",
+  "last_updated": "Jun 28, 2026, 5:48 AM",
   "games": [
-    {
-      "game_id": "6-27-ENG-PAN",
-      "date": "6/27",
-      "home_team": "ENG",
-      "away_team": "PAN",
-      "home_field": false,
-      "predicted_score": "1-0",
-      "home_xg": 2.3,
-      "away_xg": 0.5,
-      "model_implied_odds": {
-        "home": -300,
-        "away": 1567,
-        "draw": 426
-      },
-      "model_pct": {
-        "home": 75,
-        "away": 6,
-        "draw": 19
-      },
-      "best_market_odds": {
-        "home_odds": -575,
-        "home_bookmaker": "draftkings",
-        "away_odds": 1700,
-        "away_bookmaker": "betrivers",
-        "draw_odds": 800,
-        "draw_bookmaker": "fanduel"
-      },
-      "all_market_odds": {
-        "home": [
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": -575
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": -600
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": -600
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": -620
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": -620
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -649
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -700
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": -700
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": -770
-          }
-        ],
-        "away": [
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 1700
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 1600
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 1600
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 1600
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 1600
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 1425
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 1400
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 1300
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 1250
-          }
-        ],
-        "draw": [
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 800
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 800
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 800
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 800
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 750
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 725
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 700
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 700
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 670
-          }
-        ]
-      },
-      "incentive_note": "England are nearly through but still want first and have incentive to run up the score. Panama are eliminated."
-    },
-    {
-      "game_id": "6-27-CRO-GHA",
-      "date": "6/27",
-      "home_team": "CRO",
-      "away_team": "GHA",
-      "home_field": false,
-      "predicted_score": "1-0",
-      "home_xg": 1.9,
-      "away_xg": 0.8,
-      "model_implied_odds": {
-        "home": -156,
-        "away": 614,
-        "draw": 300
-      },
-      "model_pct": {
-        "home": 61,
-        "away": 14,
-        "draw": 25
-      },
-      "best_market_odds": {
-        "home_odds": -106,
-        "home_bookmaker": "betus",
-        "away_odds": 429,
-        "away_bookmaker": "betus",
-        "draw_odds": 220,
-        "draw_bookmaker": "betonlineag"
-      },
-      "all_market_odds": {
-        "home": [
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": -106
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": -110
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": -111
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": -111
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": -111
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -112
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": -113
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -115
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": -115
-          }
-        ],
-        "away": [
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 429
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 425
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 425
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 410
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 410
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 400
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 390
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 380
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 370
-          }
-        ],
-        "draw": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 220
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 220
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 215
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 214
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 213
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 210
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 210
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 210
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 200
-          }
-        ]
-      },
-      "incentive_note": "Both teams are likely alive either way, but first place is very valuable. Ghana are almost through; Croatia can win the group with help."
-    },
-    {
-      "game_id": "6-27-AUT-ALG",
-      "date": "6/27",
-      "home_team": "AUT",
-      "away_team": "ALG",
-      "home_field": false,
-      "predicted_score": "0-0",
-      "home_xg": 1.1,
-      "away_xg": 0.8,
-      "model_implied_odds": {
-        "home": 163,
-        "away": 270,
-        "draw": 186
-      },
-      "model_pct": {
-        "home": 38,
-        "away": 27,
-        "draw": 35
-      },
-      "best_market_odds": {
-        "home_odds": 205,
-        "home_bookmaker": "betonlineag",
-        "away_odds": 346,
-        "away_bookmaker": "betonlineag",
-        "draw_odds": 117,
-        "draw_bookmaker": "mybookieag"
-      },
-      "all_market_odds": {
-        "home": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 205
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 205
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 200
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 195
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 195
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 195
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 192
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 190
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 190
-          }
-        ],
-        "away": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 346
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 346
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 330
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 330
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 325
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 325
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 320
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 310
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 290
-          }
-        ],
-        "draw": [
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 117
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 115
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 110
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 110
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 110
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 109
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 109
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 108
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 107
-          }
-        ]
-      },
-      "incentive_note": "Austria and Algeria have a huge incentive to settle for a draw because four points probably gets both through."
-    },
-    {
-      "game_id": "6-27-ARG-JOR",
-      "date": "6/27",
-      "home_team": "ARG",
-      "away_team": "JOR",
-      "home_field": false,
-      "predicted_score": "2-0",
-      "home_xg": 3.2,
-      "away_xg": 0.3,
-      "model_implied_odds": {
-        "home": -733,
-        "away": 4900,
-        "draw": 809
-      },
-      "model_pct": {
-        "home": 88,
-        "away": 2,
-        "draw": 11
-      },
-      "best_market_odds": {
-        "home_odds": -625,
-        "home_bookmaker": "betmgm",
-        "away_odds": 1800,
-        "away_bookmaker": "betrivers",
-        "draw_odds": 820,
-        "draw_bookmaker": "betonlineag"
-      },
-      "all_market_odds": {
-        "home": [
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": -625
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": -635
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": -635
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": -645
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": -650
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -662
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": -675
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -700
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": -715
-          }
-        ],
-        "away": [
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 1800
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 1700
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 1650
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 1650
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 1600
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 1550
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 1540
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 1500
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 1450
-          }
-        ],
-        "draw": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 820
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 820
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 750
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 750
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 750
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 750
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 725
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 700
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 655
-          }
-        ]
-      },
-      "incentive_note": "Argentina already clinched the group and mostly have nothing to play for. Jordan are eliminated."
-    },
-    {
-      "game_id": "6-27-COL-POR",
-      "date": "6/27",
-      "home_team": "COL",
-      "away_team": "POR",
-      "home_field": false,
-      "predicted_score": "0-0",
-      "home_xg": 1.2,
-      "away_xg": 1.2,
-      "model_implied_odds": {
-        "home": 178,
-        "away": 203,
-        "draw": 223
-      },
-      "model_pct": {
-        "home": 36,
-        "away": 33,
-        "draw": 31
-      },
-      "best_market_odds": {
-        "home_odds": 265,
-        "home_bookmaker": "betonlineag",
-        "away_odds": 105,
-        "away_bookmaker": "draftkings",
-        "draw_odds": 290,
-        "draw_bookmaker": "betonlineag"
-      },
-      "all_market_odds": {
-        "home": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 265
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 265
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 265
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 250
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 245
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 245
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 245
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 242
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 240
-          }
-        ],
-        "away": [
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 105
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 102
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 100
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 100
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 100
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 100
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 100
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": -102
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -105
-          }
-        ],
-        "draw": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 290
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 290
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 290
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 285
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 285
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 280
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 280
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 270
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 265
-          }
-        ]
-      },
-      "incentive_note": null
-    },
-    {
-      "game_id": "6-27-COD-UZB",
-      "date": "6/27",
-      "home_team": "COD",
-      "away_team": "UZB",
-      "home_field": false,
-      "predicted_score": "1-1",
-      "home_xg": 2.1,
-      "away_xg": 1.4,
-      "model_implied_odds": {
-        "home": -104,
-        "away": 285,
-        "draw": 317
-      },
-      "model_pct": {
-        "home": 51,
-        "away": 26,
-        "draw": 24
-      },
-      "best_market_odds": {
-        "home_odds": -165,
-        "home_bookmaker": "betmgm",
-        "away_odds": 478,
-        "away_bookmaker": "betonlineag",
-        "draw_odds": 330,
-        "draw_bookmaker": "betonlineag"
-      },
-      "all_market_odds": {
-        "home": [
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": -165
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": -165
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": -166
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": -166
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": -166
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": -168
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -170
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -170
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": -175
-          }
-        ],
-        "away": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 478
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 478
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 478
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 475
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 460
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 460
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 450
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 440
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 425
-          }
-        ],
-        "draw": [
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 330
-          },
-          {
-            "bookmaker": "lowvig",
-            "title": "LowVig.ag",
-            "odds": 330
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 330
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 320
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 320
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 315
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 310
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 300
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 300
-          }
-        ]
-      },
-      "incentive_note": "DR Congo should advance with a win. Uzbekistan need a lot of help and probably need a multi-goal win."
-    },
     {
       "game_id": "6-28-CAN-RSA",
       "date": "6/28",
       "home_team": "CAN",
       "away_team": "RSA",
-      "home_field": true,
+      "home_field": false,
       "predicted_score": "1-0",
       "home_xg": 1.8,
       "away_xg": 0.8,
@@ -1053,138 +21,138 @@
         "draw": 16
       },
       "best_market_odds": {
-        "home_odds": -139,
-        "home_bookmaker": "bovada",
-        "away_odds": 465,
+        "home_odds": -150,
+        "home_bookmaker": "draftkings",
+        "away_odds": 515,
         "away_bookmaker": "betonlineag",
-        "draw_odds": 266,
-        "draw_bookmaker": "betus"
+        "draw_odds": 280,
+        "draw_bookmaker": "betonlineag"
       },
       "all_market_odds": {
         "home": [
           {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": -139
-          },
-          {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": -140
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": -140
+            "odds": -150
           },
           {
             "bookmaker": "betus",
             "title": "BetUS",
-            "odds": -142
+            "odds": -150
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -152
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -152
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": -143
+            "odds": -157
           },
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": -144
+            "odds": -159
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": -145
+            "odds": -160
           },
           {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": -145
+            "odds": -160
           }
         ],
         "away": [
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 465
+            "odds": 515
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 460
+            "odds": 500
           },
           {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": 460
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 450
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 425
+            "odds": 500
           },
           {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": 425
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 420
+            "odds": 475
           },
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 420
+            "odds": 475
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 465
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 460
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 450
           }
         ],
         "draw": [
           {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 266
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 265
-          },
-          {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 264
+            "odds": 280
           },
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 260
+            "odds": 275
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 275
           },
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 260
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 260
+            "odds": 275
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 255
+            "odds": 270
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": 250
+            "odds": 270
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 270
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 270
           }
         ]
       },
@@ -1197,103 +165,143 @@
       "away_team": "PAR",
       "home_field": false,
       "predicted_score": "1-0",
-      "home_xg": 2.2,
-      "away_xg": 1,
+      "home_xg": 2.3,
+      "away_xg": 0.9,
       "model_implied_odds": {
-        "home": -213,
-        "away": 456,
-        "draw": 614
+        "home": -233,
+        "away": 488,
+        "draw": 669
       },
       "model_pct": {
-        "home": 68,
-        "away": 18,
-        "draw": 14
+        "home": 70,
+        "away": 17,
+        "draw": 13
       },
       "best_market_odds": {
-        "home_odds": -235,
-        "home_bookmaker": "betonlineag",
-        "away_odds": 750,
-        "away_bookmaker": "betrivers",
-        "draw_odds": 400,
-        "draw_bookmaker": "draftkings"
+        "home_odds": -265,
+        "home_bookmaker": "draftkings",
+        "away_odds": 900,
+        "away_bookmaker": "fanduel",
+        "draw_odds": 415,
+        "draw_bookmaker": "betonlineag"
       },
       "all_market_odds": {
         "home": [
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": -235
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -250
-          },
-          {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": -255
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": -260
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
             "odds": -265
           },
           {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -265
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -268
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
             "odds": -275
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -275
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": -275
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -280
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": -305
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": -310
           }
         ],
         "away": [
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 750
+            "odds": 900
           },
           {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": 700
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 700
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 700
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 690
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 675
+            "odds": 900
           },
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 666
+            "odds": 785
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 775
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 750
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 725
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 720
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 700
           }
         ],
         "draw": [
           {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 415
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 415
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 410
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 400
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 400
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 400
+          },
+          {
             "bookmaker": "bovada",
             "title": "Bovada",
             "odds": 400
@@ -1302,31 +310,6 @@
             "bookmaker": "draftkings",
             "title": "DraftKings",
             "odds": 400
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 393
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 380
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 380
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 370
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 370
           }
         ]
       },
@@ -1352,11 +335,11 @@
         "draw": 17
       },
       "best_market_odds": {
-        "home_odds": 122,
+        "home_odds": 118,
         "home_bookmaker": "betonlineag",
-        "away_odds": 280,
-        "away_bookmaker": "betrivers",
-        "draw_odds": 230,
+        "away_odds": 290,
+        "away_bookmaker": "fanduel",
+        "draw_odds": 225,
         "draw_bookmaker": "draftkings"
       },
       "all_market_odds": {
@@ -1364,12 +347,12 @@
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 122
+            "odds": 118
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 117
+            "odds": 115
           },
           {
             "bookmaker": "draftkings",
@@ -1387,18 +370,18 @@
             "odds": 115
           },
           {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 115
-          },
-          {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 111
+            "odds": 110
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
+            "odds": 110
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
             "odds": 110
           }
         ],
@@ -1406,12 +389,27 @@
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 280
+            "odds": 290
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 290
           },
           {
             "bookmaker": "betus",
             "title": "BetUS",
-            "odds": 275
+            "odds": 290
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 286
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 270
           },
           {
             "bookmaker": "draftkings",
@@ -1419,50 +417,20 @@
             "odds": 270
           },
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 270
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 269
-          },
-          {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 265
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 260
+            "odds": 270
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": 250
+            "odds": 260
           }
         ],
         "draw": [
           {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": 230
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 230
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 226
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
             "odds": 225
           },
           {
@@ -1471,19 +439,34 @@
             "odds": 225
           },
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 220
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 220
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
             "odds": 218
           },
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 210
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 215
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
             "odds": 205
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 200
           }
         ]
       },
@@ -1496,24 +479,24 @@
       "away_team": "JPN",
       "home_field": false,
       "predicted_score": "1-0",
-      "home_xg": 1.9,
+      "home_xg": 2,
       "away_xg": 0.9,
       "model_implied_odds": {
-        "home": -186,
-        "away": 400,
+        "home": -194,
+        "away": 426,
         "draw": 567
       },
       "model_pct": {
-        "home": 65,
-        "away": 20,
+        "home": 66,
+        "away": 19,
         "draw": 15
       },
       "best_market_odds": {
-        "home_odds": -139,
+        "home_odds": -143,
         "home_bookmaker": "bovada",
-        "away_odds": 450,
-        "away_bookmaker": "betonlineag",
-        "draw_odds": 285,
+        "away_odds": 475,
+        "away_bookmaker": "betrivers",
+        "draw_odds": 290,
         "draw_bookmaker": "draftkings"
       },
       "all_market_odds": {
@@ -1521,22 +504,7 @@
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": -139
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": -140
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": -140
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -142
+            "odds": -143
           },
           {
             "bookmaker": "betonlineag",
@@ -1549,21 +517,36 @@
             "odds": -145
           },
           {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": -150
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -145
           },
           {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": -150
+            "odds": -145
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": -145
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -148
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": -159
           }
         ],
         "away": [
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 450
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 475
           },
           {
             "bookmaker": "fanduel",
@@ -1571,9 +554,9 @@
             "odds": 440
           },
           {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 430
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 440
           },
           {
             "bookmaker": "betus",
@@ -1581,14 +564,9 @@
             "odds": 425
           },
           {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 400
-          },
-          {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 400
+            "odds": 410
           },
           {
             "bookmaker": "draftkings",
@@ -1598,49 +576,54 @@
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 400
+            "odds": 390
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 380
           }
         ],
         "draw": [
           {
             "bookmaker": "draftkings",
             "title": "DraftKings",
+            "odds": 290
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 290
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 285
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
             "odds": 285
           },
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 285
-          },
-          {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 280
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 280
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 280
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 275
+            "odds": 281
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": 270
+            "odds": 275
           },
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 265
+            "odds": 275
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 270
           }
         ]
       },
@@ -1666,34 +649,29 @@
         "draw": 8
       },
       "best_market_odds": {
-        "home_odds": -330,
-        "home_bookmaker": "fanduel",
-        "away_odds": 1050,
-        "away_bookmaker": "betonlineag",
-        "draw_odds": 490,
-        "draw_bookmaker": "betonlineag"
+        "home_odds": -340,
+        "home_bookmaker": "draftkings",
+        "away_odds": 1100,
+        "away_bookmaker": "betrivers",
+        "draw_odds": 525,
+        "draw_bookmaker": "betrivers"
       },
       "all_market_odds": {
         "home": [
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -330
-          },
-          {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": -330
+            "odds": -340
           },
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": -335
+            "odds": -345
           },
           {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -340
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": -345
           },
           {
             "bookmaker": "betmgm",
@@ -1706,26 +684,36 @@
             "odds": -353
           },
           {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -360
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": -380
+          },
+          {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": -360
+            "odds": -420
           }
         ],
         "away": [
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 1100
+          },
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
             "odds": 1050
           },
           {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 950
-          },
-          {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": 950
+            "odds": 1000
           },
           {
             "bookmaker": "bovada",
@@ -1735,6 +723,11 @@
           {
             "bookmaker": "draftkings",
             "title": "DraftKings",
+            "odds": 900
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
             "odds": 900
           },
           {
@@ -1745,44 +738,49 @@
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 850
+            "odds": 870
           }
         ],
         "draw": [
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 525
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 500
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 500
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 500
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 490
+          },
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
             "odds": 490
           },
           {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 475
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 475
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 475
-          },
-          {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 450
+            "odds": 480
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": 450
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 440
+            "odds": 475
           }
         ]
       },
@@ -1808,75 +806,222 @@
         "draw": 13
       },
       "best_market_odds": {
-        "home_odds": 103,
-        "home_bookmaker": "betus",
-        "away_odds": 289,
-        "away_bookmaker": "betonlineag",
-        "draw_odds": 260,
-        "draw_bookmaker": "fanduel"
+        "home_odds": 106,
+        "home_bookmaker": "mybookieag",
+        "away_odds": 280,
+        "away_bookmaker": "betrivers",
+        "draw_odds": 262,
+        "draw_bookmaker": "betonlineag"
       },
       "all_market_odds": {
         "home": [
           {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 103
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 106
           },
           {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 100
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 106
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": 100
+            "odds": 105
           },
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 100
+            "odds": 105
           },
           {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": 100
+            "odds": 105
           },
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 100
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 105
           },
           {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -103
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 102
           },
           {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": -105
+            "odds": 100
           }
         ],
         "away": [
           {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 280
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 270
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 265
+          },
+          {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 289
+            "odds": 265
           },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 265
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 260
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 250
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 250
+          }
+        ],
+        "draw": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 262
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 255
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 255
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 250
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 250
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 250
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 248
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 240
+          }
+        ]
+      },
+      "incentive_note": null
+    },
+    {
+      "game_id": "6-30-MEX-ECU",
+      "date": "6/30",
+      "home_team": "MEX",
+      "away_team": "ECU",
+      "home_field": true,
+      "predicted_score": "1-0",
+      "home_xg": 1.5,
+      "away_xg": 0.7,
+      "model_implied_odds": {
+        "home": -156,
+        "away": 400,
+        "draw": 456
+      },
+      "model_pct": {
+        "home": 61,
+        "away": 20,
+        "draw": 18
+      },
+      "best_market_odds": {
+        "home_odds": 124,
+        "home_bookmaker": "betonlineag",
+        "away_odds": 285,
+        "away_bookmaker": "betrivers",
+        "draw_odds": 210,
+        "draw_bookmaker": "betmgm"
+      },
+      "all_market_odds": {
+        "home": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 124
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 120
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 120
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 120
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 117
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 115
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 110
+          }
+        ],
+        "away": [
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
             "odds": 285
           },
           {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 283
-          },
-          {
             "bookmaker": "fanduel",
             "title": "FanDuel",
+            "odds": 280
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
             "odds": 280
           },
           {
@@ -1885,9 +1030,9 @@
             "odds": 280
           },
           {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 275
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 280
           },
           {
             "bookmaker": "mybookieag",
@@ -1897,49 +1042,186 @@
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": 260
+            "odds": 270
           }
         ],
         "draw": [
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 260
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 210
           },
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 260
+            "odds": 210
           },
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 260
+            "odds": 207
           },
           {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": 255
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 255
+            "odds": 205
           },
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 250
-          },
-          {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 250
+            "odds": 202
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 245
+            "odds": 195
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 190
+          }
+        ]
+      },
+      "incentive_note": null
+    },
+    {
+      "game_id": "7-1-ENG-COD",
+      "date": "7/1",
+      "home_team": "ENG",
+      "away_team": "COD",
+      "home_field": false,
+      "predicted_score": "1-0",
+      "home_xg": 2.6,
+      "away_xg": 0.5,
+      "model_implied_odds": {
+        "home": -525,
+        "away": 1567,
+        "draw": 900
+      },
+      "model_pct": {
+        "home": 84,
+        "away": 6,
+        "draw": 10
+      },
+      "best_market_odds": {
+        "home_odds": -335,
+        "home_bookmaker": "betonlineag",
+        "away_odds": 1200,
+        "away_bookmaker": "fanduel",
+        "draw_odds": 475,
+        "draw_bookmaker": "draftkings"
+      },
+      "all_market_odds": {
+        "home": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -335
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -350
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -360
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": -375
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": -380
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": -385
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -391
+          }
+        ],
+        "away": [
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 1200
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 1200
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 1100
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 1100
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 1075
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 1000
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 1000
+          }
+        ],
+        "draw": [
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 475
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 460
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 460
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 460
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 450
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 450
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 450
           }
         ]
       },
@@ -1965,60 +1247,70 @@
         "draw": 12
       },
       "best_market_odds": {
-        "home_odds": -250,
-        "home_bookmaker": "betmgm",
-        "away_odds": 800,
-        "away_bookmaker": "fanduel",
-        "draw_odds": 395,
-        "draw_bookmaker": "betonlineag"
+        "home_odds": -260,
+        "home_bookmaker": "draftkings",
+        "away_odds": 900,
+        "away_bookmaker": "betonlineag",
+        "draw_odds": 410,
+        "draw_bookmaker": "fanduel"
       },
       "all_market_odds": {
         "home": [
           {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": -250
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -260
           },
           {
             "bookmaker": "betus",
             "title": "BetUS",
-            "odds": -250
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": -255
+            "odds": -262
           },
           {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": -260
+            "odds": -265
           },
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": -260
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": -275
           },
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": -265
+            "odds": -275
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": -275
+            "odds": -278
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -280
           },
           {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": -280
+            "odds": -300
           }
         ],
         "away": [
           {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 900
+          },
+          {
             "bookmaker": "fanduel",
             "title": "FanDuel",
+            "odds": 850
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
             "odds": 800
           },
           {
@@ -2027,41 +1319,46 @@
             "odds": 800
           },
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 800
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 775
           },
           {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 750
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
             "odds": 750
           },
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 710
+            "odds": 750
           },
           {
-            "bookmaker": "betmgm",
-            "title": "BetMGM",
-            "odds": 700
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 700
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 745
           }
         ],
         "draw": [
           {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 410
+          },
+          {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 395
+            "odds": 405
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 400
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 400
           },
           {
             "bookmaker": "draftkings",
@@ -2069,9 +1366,9 @@
             "odds": 390
           },
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 380
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 390
           },
           {
             "bookmaker": "mybookieag",
@@ -2079,24 +1376,577 @@
             "odds": 380
           },
           {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 375
+          }
+        ]
+      },
+      "incentive_note": null
+    },
+    {
+      "game_id": "7-1-SEN-BEL",
+      "date": "7/1",
+      "home_team": "SEN",
+      "away_team": "BEL",
+      "home_field": false,
+      "predicted_score": "1-0",
+      "home_xg": 1.3,
+      "away_xg": 1.3,
+      "model_implied_odds": {
+        "home": 138,
+        "away": 144,
+        "draw": 456
+      },
+      "model_pct": {
+        "home": 42,
+        "away": 41,
+        "draw": 18
+      },
+      "best_market_odds": {
+        "home_odds": 275,
+        "home_bookmaker": "draftkings",
+        "away_odds": 120,
+        "away_bookmaker": "betonlineag",
+        "draw_odds": 230,
+        "draw_bookmaker": "draftkings"
+      },
+      "all_market_odds": {
+        "home": [
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 275
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 275
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 270
+          },
+          {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 380
+            "odds": 270
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 268
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 375
-          },
-          {
-            "bookmaker": "betus",
-            "title": "BetUS",
-            "odds": 375
+            "odds": 265
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
+            "odds": 260
+          }
+        ],
+        "away": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 120
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 116
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 115
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 110
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 110
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 110
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 107
+          }
+        ],
+        "draw": [
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 230
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 230
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 225
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 220
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 220
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 220
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 210
+          }
+        ]
+      },
+      "incentive_note": null
+    },
+    {
+      "game_id": "7-2-POR-CRO",
+      "date": "7/2",
+      "home_team": "POR",
+      "away_team": "CRO",
+      "home_field": false,
+      "predicted_score": "1-0",
+      "home_xg": 1.8,
+      "away_xg": 1,
+      "model_implied_odds": {
+        "home": -156,
+        "away": 335,
+        "draw": 525
+      },
+      "model_pct": {
+        "home": 61,
+        "away": 23,
+        "draw": 16
+      },
+      "best_market_odds": {
+        "home_odds": -114,
+        "home_bookmaker": "bovada",
+        "away_odds": 400,
+        "away_bookmaker": "betonlineag",
+        "draw_odds": 260,
+        "draw_bookmaker": "draftkings"
+      },
+      "all_market_odds": {
+        "home": [
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -114
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -119
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": -120
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": -120
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -120
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -122
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": -125
+          }
+        ],
+        "away": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 400
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 380
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
             "odds": 360
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 360
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 350
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 333
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 330
+          }
+        ],
+        "draw": [
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 260
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 255
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 250
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 250
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 245
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 242
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 240
+          }
+        ]
+      },
+      "incentive_note": null
+    },
+    {
+      "game_id": "7-2-ESP-AUT",
+      "date": "7/2",
+      "home_team": "ESP",
+      "away_team": "AUT",
+      "home_field": false,
+      "predicted_score": "1-0",
+      "home_xg": 2.8,
+      "away_xg": 0.6,
+      "model_implied_odds": {
+        "home": -488,
+        "away": 1150,
+        "draw": 900
+      },
+      "model_pct": {
+        "home": 83,
+        "away": 8,
+        "draw": 10
+      },
+      "best_market_odds": {
+        "home_odds": -352,
+        "home_bookmaker": "betonlineag",
+        "away_odds": 1500,
+        "away_bookmaker": "fanduel",
+        "draw_odds": 475,
+        "draw_bookmaker": "draftkings"
+      },
+      "all_market_odds": {
+        "home": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -352
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": -360
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -360
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -370
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": -375
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -380
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": -400
+          }
+        ],
+        "away": [
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 1500
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 1300
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 1200
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 1200
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 1125
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 1100
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 1100
+          }
+        ],
+        "draw": [
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 475
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 450
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 440
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 440
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 440
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 430
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 430
+          }
+        ]
+      },
+      "incentive_note": null
+    },
+    {
+      "game_id": "7-2-SUI-ALG",
+      "date": "7/2",
+      "home_team": "SUI",
+      "away_team": "ALG",
+      "home_field": false,
+      "predicted_score": "1-0",
+      "home_xg": 2.1,
+      "away_xg": 0.9,
+      "model_implied_odds": {
+        "home": -213,
+        "away": 456,
+        "draw": 614
+      },
+      "model_pct": {
+        "home": 68,
+        "away": 18,
+        "draw": 14
+      },
+      "best_market_odds": {
+        "home_odds": -110,
+        "home_bookmaker": "draftkings",
+        "away_odds": 358,
+        "away_bookmaker": "betonlineag",
+        "draw_odds": 270,
+        "draw_bookmaker": "draftkings"
+      },
+      "all_market_odds": {
+        "home": [
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -110
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -110
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -112
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": -115
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": -115
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": -117
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -117
+          }
+        ],
+        "away": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 358
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 325
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 310
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 310
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 300
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 300
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 295
+          }
+        ],
+        "draw": [
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 270
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 260
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 260
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 260
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 260
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 250
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 246
           }
         ]
       },
@@ -2112,38 +1962,28 @@
       "home_xg": 3.4,
       "away_xg": 0.2,
       "model_implied_odds": {
-        "home": -1329,
+        "home": -1567,
         "away": 9900,
         "draw": 1900
       },
       "model_pct": {
-        "home": 93,
+        "home": 94,
         "away": 1,
         "draw": 5
       },
       "best_market_odds": {
-        "home_odds": -600,
-        "home_bookmaker": "draftkings",
-        "away_odds": 1826,
-        "away_bookmaker": "betonlineag",
-        "draw_odds": 747,
-        "draw_bookmaker": "betonlineag"
+        "home_odds": -625,
+        "home_bookmaker": "betmgm",
+        "away_odds": 2000,
+        "away_bookmaker": "fanduel",
+        "draw_odds": 760,
+        "draw_bookmaker": "betus"
       },
       "all_market_odds": {
         "home": [
           {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": -600
-          },
-          {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": -625
-          },
-          {
-            "bookmaker": "bovada",
-            "title": "Bovada",
             "odds": -625
           },
           {
@@ -2152,73 +1992,103 @@
             "odds": -637
           },
           {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": -649
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -650
           },
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": -650
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": -658
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -675
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -725
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": -670
+            "odds": -770
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": -800
           }
         ],
         "away": [
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 2000
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 2000
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 1900
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 1899
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 1850
+          },
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
             "odds": 1826
           },
           {
-            "bookmaker": "betrivers",
-            "title": "BetRivers",
-            "odds": 1800
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 1700
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 1700
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 1650
-          },
-          {
             "bookmaker": "bovada",
             "title": "Bovada",
-            "odds": 1600
+            "odds": 1700
           },
           {
             "bookmaker": "betmgm",
             "title": "BetMGM",
-            "odds": 1500
+            "odds": 1600
           }
         ],
         "draw": [
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 747
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 760
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 700
+            "odds": 750
           },
           {
             "bookmaker": "draftkings",
             "title": "DraftKings",
-            "odds": 700
+            "odds": 750
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 750
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 747
           },
           {
             "bookmaker": "bovada",
@@ -2233,12 +2103,149 @@
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 620
+            "odds": 660
+          }
+        ]
+      },
+      "incentive_note": null
+    },
+    {
+      "game_id": "7-3-COL-GHA",
+      "date": "7/3",
+      "home_team": "COL",
+      "away_team": "GHA",
+      "home_field": false,
+      "predicted_score": "1-0",
+      "home_xg": 2.5,
+      "away_xg": 0.4,
+      "model_implied_odds": {
+        "home": -525,
+        "away": 1900,
+        "draw": 900
+      },
+      "model_pct": {
+        "home": 84,
+        "away": 5,
+        "draw": 10
+      },
+      "best_market_odds": {
+        "home_odds": -153,
+        "home_bookmaker": "betonlineag",
+        "away_odds": 550,
+        "away_bookmaker": "fanduel",
+        "draw_odds": 285,
+        "draw_bookmaker": "draftkings"
+      },
+      "all_market_odds": {
+        "home": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": -153
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": -162
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": -164
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": -165
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": -165
           },
           {
             "bookmaker": "fanduel",
             "title": "FanDuel",
-            "odds": 600
+            "odds": -170
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": -170
+          }
+        ],
+        "away": [
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 550
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 550
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 550
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 540
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 510
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 500
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 500
+          }
+        ],
+        "draw": [
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 285
+          },
+          {
+            "bookmaker": "betmgm",
+            "title": "BetMGM",
+            "odds": 270
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 270
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 270
+          },
+          {
+            "bookmaker": "betrivers",
+            "title": "BetRivers",
+            "odds": 265
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 265
+          },
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 262
           }
         ]
       },
@@ -2264,24 +2271,44 @@
         "draw": 18
       },
       "best_market_odds": {
-        "home_odds": 250,
-        "home_bookmaker": "fanduel",
-        "away_odds": 150,
-        "away_bookmaker": "draftkings",
-        "draw_odds": 200,
-        "draw_bookmaker": "draftkings"
+        "home_odds": 243,
+        "home_bookmaker": "betonlineag",
+        "away_odds": 155,
+        "away_bookmaker": "betonlineag",
+        "draw_odds": 201,
+        "draw_bookmaker": "betus"
       },
       "all_market_odds": {
         "home": [
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 250
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 243
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 233
           },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
-            "odds": 235
+            "odds": 230
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 230
+          },
+          {
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 230
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
+            "odds": 230
           },
           {
             "bookmaker": "betmgm",
@@ -2289,27 +2316,17 @@
             "odds": 225
           },
           {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 225
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 225
-          },
-          {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 224
-          },
-          {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 215
+            "odds": 218
           }
         ],
         "away": [
+          {
+            "bookmaker": "betonlineag",
+            "title": "BetOnline.ag",
+            "odds": 155
+          },
           {
             "bookmaker": "betrivers",
             "title": "BetRivers",
@@ -2319,6 +2336,21 @@
             "bookmaker": "draftkings",
             "title": "DraftKings",
             "odds": 150
+          },
+          {
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 150
+          },
+          {
+            "bookmaker": "mybookieag",
+            "title": "MyBookie.ag",
+            "odds": 149
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 145
           },
           {
             "bookmaker": "bovada",
@@ -2326,36 +2358,16 @@
             "odds": 145
           },
           {
-            "bookmaker": "betonlineag",
-            "title": "BetOnline.ag",
-            "odds": 144
-          },
-          {
-            "bookmaker": "mybookieag",
-            "title": "MyBookie.ag",
-            "odds": 143
-          },
-          {
             "bookmaker": "betmgm",
             "title": "BetMGM",
             "odds": 140
-          },
-          {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
-            "odds": 135
           }
         ],
         "draw": [
           {
-            "bookmaker": "bovada",
-            "title": "Bovada",
-            "odds": 200
-          },
-          {
-            "bookmaker": "draftkings",
-            "title": "DraftKings",
-            "odds": 200
+            "bookmaker": "betus",
+            "title": "BetUS",
+            "odds": 201
           },
           {
             "bookmaker": "betrivers",
@@ -2363,14 +2375,24 @@
             "odds": 195
           },
           {
-            "bookmaker": "fanduel",
-            "title": "FanDuel",
+            "bookmaker": "bovada",
+            "title": "Bovada",
+            "odds": 195
+          },
+          {
+            "bookmaker": "draftkings",
+            "title": "DraftKings",
             "odds": 195
           },
           {
             "bookmaker": "mybookieag",
             "title": "MyBookie.ag",
-            "odds": 194
+            "odds": 190
+          },
+          {
+            "bookmaker": "fanduel",
+            "title": "FanDuel",
+            "odds": 190
           },
           {
             "bookmaker": "betmgm",
@@ -2380,7 +2402,7 @@
           {
             "bookmaker": "betonlineag",
             "title": "BetOnline.ag",
-            "odds": 184
+            "odds": 185
           }
         ]
       },

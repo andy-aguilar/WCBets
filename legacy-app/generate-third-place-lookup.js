@@ -117,6 +117,17 @@ async function main() {
   }
 
   const combos = parseRows(wikitext);
+  if (combos.length === 0) {
+    if (fs.existsSync(OUTPUT_PATH)) {
+      console.warn(
+        `Parsed zero third-place combinations; preserving existing ${path.basename(OUTPUT_PATH)}`
+      );
+      return;
+    }
+
+    throw new Error("Parsed zero third-place combinations and no existing lookup file to keep");
+  }
+
   const combosByKey = Object.fromEntries(
     combos.map((combo) => [
       combo.key,
