@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "atlas-bets",
+  "name": "atlas-bets-beta",
   "compatibility_date": "2026-06-26",
   "observability": {
     "enabled": true,
